@@ -18,22 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: 聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/网易CC/电视直播，支持手机/平板/电视/车机
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/网易CC/电视直播，支持手机/平板/电视/车机
+  聚合直播(HuYa),support for live streaming from Huya, Douyu, Kuaishou, Bilibili, Douyu, YY, NeteaseCC, and TV. Supports mobile, tablet, TV, and car.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# twitter_username: jekyllrb
+github_username:  jayjd
+google-adsense-account: ca-pub-9311012147988614
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-
+# theme: minima
+# plugins:
+#   - jekyll-feed
+remote_theme: eliottvincent/bay
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -53,3 +53,41 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+header:
+  pages:
+    - name: 首页
+      slug: /     # <-- index.md
+    - name: 软件发行  # <-- blog.md
+      slug: /blog
+
+footer:
+  show_powered_by: true
+  contact:
+    - type: email
+      name: Email
+      value: yourmail@domain.com
+    - type: wechat
+      value: YourWeChatUsername
+      link: "#"
+  follow:
+    - type: twitter
+      name: Twitter
+      link: http://twitter.com/YourTwitterUsername
+      username: "@YourTwitterUsername"
+    - type: facebook
+      name: Facebook
+      link: http://facebook.com/YourFacebookUsername
+    - type: linkedin
+      name: LinkedIn
+      link: http://linkedin.com/in/YourLinkedInUsername
+    - type: github
+      name: GitHub
+      link: http://github.com/YourGitHubUsername
+    - type: dribbble
+      name: Dribbble
+      link: https://dribbble.com/YourDribbbleUsername
+    - type: rss
+      name: RSS
+      link: /feed.xml

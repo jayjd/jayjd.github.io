@@ -9,6 +9,15 @@
   <meta name="google-adsense-account" content="{{ site.google-adsense-account }}">
   <!-- 可以添加自定义的样式文件来美化导航栏 -->
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5737d7b10d185c5c6c4a58aed217ac09";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
 </head>
 <body>
   <!-- 导航栏 -->
@@ -26,14 +35,6 @@
   {{ content }}
   </div>
 </body>
-<script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?5737d7b10d185c5c6c4a58aed217ac09";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-  </script>
+
   
 </html>

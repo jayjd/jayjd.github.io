@@ -127,6 +127,7 @@ nav ul li a:hover {
 
 /* 为按钮添加样式 */
 .download-button {
+    width: 128px;
     display: inline-block;
     padding: 10px 20px;
     background-color: #007BFF;

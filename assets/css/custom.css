@@ -169,6 +169,13 @@ nav ul li a:hover {
 
 /* 手机端样式 */
 @media screen and (max-width: 600px) {
+    .info-row-posts {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        justify-content: center;
+    }
     .info-row img {
         margin: 0 auto;
     }

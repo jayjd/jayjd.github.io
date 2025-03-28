@@ -9,7 +9,7 @@ body {
     /* 设置宽度为 80%，并居中 */
 }
 
-.markdown-body{
+.markdown-body {
     width: 80%;
     margin: 0 auto;
 }
@@ -73,8 +73,10 @@ nav ul li a:hover {
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 15px;
-    display: flex; /* 使用 flexbox 布局 */
-        align-items: center; /* 垂直居中对齐 */
+    display: flex;
+    /* 使用 flexbox 布局 */
+    align-items: center;
+    /* 垂直居中对齐 */
     transition: all 0.3s ease;
 }
 
@@ -83,17 +85,88 @@ nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.log-list li a {
+.log-list li post_thread {
     color: #007BFF;
     text-decoration: none;
 }
 
-.log-list li a:hover {
+.log-list li post_thread:hover {
     text-decoration: underline;
 }
 
 .log-list li span {
     color: #777;
     margin-left: 10px;
-    white-space: nowrap; /* 防止日期换行 */
+    white-space: nowrap;
+    /* 防止日期换行 */
+}
+
+.info-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-row img {
+    margin-right: 50px;
+    /*圆角  */
+    border-radius: 10px;
+}
+
+.info-label {
+    width: 120px;
+    font-weight: bold;
+}
+
+
+/* 为按钮添加样式 */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.download-button img {
+    margin-right: 5px;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+/* 手机端样式 */
+@media screen and (max-width: 600px) {
+    .log-item {
+        flex-direction: column;
+    }
+
+    .log-icon img {
+        margin: 10px;
+        /* 图标与标题之间的间距 */
+        vertical-align: middle;
+        /* 垂直居中 */
+        border-radius: 10px;
+        /* 圆角  */
+    }
+
+    .log-content {
+        text-align: center;
+        /* 文本居中 */
+    }
+
+    body {
+        font-size: 14px;
+    }
 }

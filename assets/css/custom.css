@@ -112,6 +112,11 @@ nav ul li a:hover {
     align-items: center;
     margin-bottom: 10px;
 }
+.info-row-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
 .info-row img {
     margin-right: 50px;
@@ -121,6 +126,7 @@ nav ul li a:hover {
 
 .info-label {
     width: 120px;
+    font-size:larger;
     font-weight: bold;
 }
 
@@ -149,10 +155,30 @@ nav ul li a:hover {
 
 /* 手机端样式 */
 @media screen and (max-width: 600px) {
+    .info-row img {
+        margin: 0 auto;
+    }
+    .markdown-body{
+        width: 90%;
+    }
     .log-item {
         flex-direction: column;
     }
-
+    .info-label{
+        text-align: center;
+    }
+    .info-row {
+        flex-direction: column;
+    }
+    .info-row-label {
+        margin-top: 10px;
+        display: flex;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .download-button {
+        margin: 0 auto;
+    }
     .log-icon img {
         margin: 10px;
         /* 图标与标题之间的间距 */

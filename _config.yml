@@ -22,6 +22,8 @@ title: 聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/网�
 description: >- # this means to ignore newlines until "baseurl:"
   聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/网易CC/电视直播，支持手机/平板/电视/车机
   聚合直播(HuYa),support for live streaming from Huya, Douyu, Kuaishou, Bilibili, Douyu, YY, NeteaseCC, and TV. Supports mobile, tablet, TV, and car.
+keywords: 聚合直播,HuYa,虎牙,抖音,快手,哔哩哔哩,斗鱼,YY,网易CC,电视直播,手机直播,手机直播平台,手机直播平台
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 google-adsense-account: ca-pub-9311012147988614

@@ -1,8 +1,17 @@
 ---
 layout: default
-title:  "HuYa 2.1.23"
-date:   2025-03-27 08:53:49 +0800
+title:  "HuYa 所有更新日志记录"
+version: 2.1.23
+icon: "/assets/img/ic_channel.png"
+package: com.ccc.huya
+md5: 123456789abcdef123456789abcdef12
+update-content: "<p>近期更新</p>
+            <p>1. 修复 B 站直播崩溃问题</p>
+            <p>2. 修复 抖音直播清晰度选择问题</p>"
+date:   2025-03-28 08:53:49 +0800
 categories: jayjd update
+gitee_download: "https://gitee.com/jayjd/hyy/releases/download/2.1.23/HuYa-2.1.23-20250319.apk"
+github_download: "https://github.com/jayjd/HuYaTv/releases/download/2.1.23/HuYa-2.1.23-20250319.apk"
 ---
 ### 声明一下  现在6.0以下的版本 基本上没有什么BUG了，6.0以下只保证可以正常播放  其他方面的功能由于版本过于久远 没有真实的测试环境  后续增加的功能只针对6.0以上的设备进行适配。
 ### ==================================

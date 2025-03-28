@@ -2,4 +2,4 @@
 layout: default
 title: 关于
 ---
-这里是关于页面的内容。
+网站建设中...

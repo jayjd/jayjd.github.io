@@ -2,12 +2,16 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     /* 浅灰色背景 */
+    margin: 0 auto;
+    width: 100%;
+    /* 设置宽度为 80%，并居中 */
+}
+
+.markdown-body{
     width: 80%;
     margin: 0 auto;
-    /* 设置宽度为 80%，并居中 */
-
 }
 
 

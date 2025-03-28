@@ -3,8 +3,6 @@ layout: default
 title: 更新列表
 ---
 
-# 更新列表
-
 <style>
   .log-icon img {
     margin-right: 10px; /* 图标与标题之间的间距 */
@@ -47,8 +45,8 @@ title: 更新列表
     margin-left: 20px;
   }
 </style>
-
 <ul class="log-list">
+  <h2>更新列表</h2>
   {% for post in site.posts %}
     <li class="log-item">
       <div class="log-icon">

@@ -30,7 +30,7 @@ google-adsense-account: ca-pub-9311012147988614
 # theme: minima
 # plugins:
 #   - jekyll-feed
-remote_theme: eliottvincent/bay
+remote_theme: "mmistakes/minimal-mistakes"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -50,41 +50,3 @@ remote_theme: eliottvincent/bay
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-
-header:
-  pages:
-    - name: 首页
-      slug: /     # <-- index.md
-    - name: 软件发行  # <-- blog.md
-      slug: /blog
-
-footer:
-  show_powered_by: true
-  contact:
-    - type: email
-      name: Email
-      value: yourmail@domain.com
-    - type: wechat
-      value: YourWeChatUsername
-      link: "#"
-  follow:
-    - type: twitter
-      name: Twitter
-      link: http://twitter.com/YourTwitterUsername
-      username: "@YourTwitterUsername"
-    - type: facebook
-      name: Facebook
-      link: http://facebook.com/YourFacebookUsername
-    - type: linkedin
-      name: LinkedIn
-      link: http://linkedin.com/in/YourLinkedInUsername
-    - type: github
-      name: GitHub
-      link: http://github.com/YourGitHubUsername
-    - type: dribbble
-      name: Dribbble
-      link: https://dribbble.com/YourDribbbleUsername
-    - type: rss
-      name: RSS
-      link: /feed.xml

@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* 浅灰色背景 */
+    width: 80%;
+    margin: 0 auto;
+    /* 设置宽度为 80%，并居中 */
+    
+}
+
+
+/* 导航栏样式，保持不变 */
+nav {
+    background-color: #222;
+    /* 深灰色背景 */
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 添加阴影 */
+}
+
+.nav-container {
+    width: 100%;
+    /* 设置宽度为 100% 占满屏幕 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    /* 增加间距 */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    /* 增加内边距 */
+    display: block;
+    transition: background-color 0.3s ease;
+    /* 添加过渡效果 */
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    /* 鼠标悬停时的背景颜色 */
+}
+
+/* 日志列表样式，添加特定类名 .log-list */
+.log-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.log-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.log-list li:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.log-list li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.log-list li a:hover {
+    text-decoration: underline;
+}
+
+.log-list li span {
+    color: #6c757d;
+    font-size: 0.9em;
+}

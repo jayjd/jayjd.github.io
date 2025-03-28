@@ -1,49 +1,80 @@
+---
+layout: default
+title:  "聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/网易CC/电视直播，支持手机/平板/电视/车机"
+---
+
 <style>
   body {
-    /* 设置左右外边距为自动，使内容水平居中 */
-    margin: 0 auto; 
-    /* 设置左右内边距为 20px，留出空白 */
-    padding: 0 20px; 
-    /* 限制最大宽度为 800px，避免内容过宽 */
-    max-width: 80%; 
-}
-    table {
-        width: 100%; /* 表格宽度撑满父容器 */
-        border-collapse: collapse; /* 合并边框 */
-    }
-    th, td {
-        border: 1px solid #ccc; /* 为单元格添加边框 */
-        padding: 8px; /* 单元格内边距 */
-        text-align: center; /* 文本居中 */
-    }
-    td img {
+    font-family: Arial, sans-serif; /* 设置全局字体 */
+    color: #333; /* 设置全局文字颜色 */
+    line-height: 1.6; /* 设置行间距 */
+  }
+  h1 {
+    font-size: 36px; /* 设置一级标题字体大小 */
+    color: #333; /* 设置一级标题文字颜色 */
+    margin-top: 20px; /* 设置一级标题顶部外边距 */
+  }
+  h2 {
+    font-size: 28px; /* 设置二级标题字体大小 */
+    color: #333; /* 设置二级标题文字颜色 */
+    margin-top: 40px; /* 设置二级标题顶部外边距 */
+  }
+  h3 {
+    font-size: 22px; /* 设置三级标题字体大小 */
+    color: #333; /* 设置三级标题文字颜色 */
+    margin-top: 30px; /* 设置三级标题顶部外边距 */
+  }
+  p {
+    margin-bottom: 20px; /* 设置段落底部外边距 */
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  td img {
         max-width: 100%; /* 图片最大宽度为单元格宽度 */
         height: auto; /* 保持图片比例 */
     }
+    .overtime {
+    display: block;
+    margin: 20px auto; /* 上下外边距为 20px，左右居中 */
+    max-width: 80%; /* 最大宽度为父元素的 80% */
+    height: auto; /* 保持图片比例 */
+  }
 </style>
 
-<div align="center"> 
-
-<img src="https://github.com/user-attachments/assets/889d6081-8191-45ca-acb4-4e9cf2267efc" width="100" height="100">
-
-<h1>HuYa</h1>
+<div style="text-align: center; margin-top: 50px;"> 
+  <img src="https://github.com/user-attachments/assets/889d6081-8191-45ca-acb4-4e9cf2267efc" width="150" height="150" style="border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+  <h1>HuYa</h1>
 </div>
-<div align="center">
-  
 
-<a href="https://github.com/jayjd/huyatv/releases/latest">
-  <img src="https://img.shields.io/badge/Android%204.4+-orange.svg?color=orange&logoColor=orange&label=%E6%94%AF%E6%8C%81%E5%AE%89%E5%8D%93%E7%89%88%E6%9C%AC&logo=Android" alt="支持安卓版本">
-</a>
-<a href="https://github.com/jayjd/huyatv/releases/latest">
-  <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=Releases&logo=DocuSign" alt="Releases">
-</a>
-<a href="https://github.com/jayjd/huyatv/releases/latest">
-  <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=Download&logoColor=yellow&color=yellow" alt="Download">
-</a>
-<a href="https://github.com/jayjd/huyatv/releases/latest">
-  <img src="https://img.shields.io/github/stars/jayjd/huyatv?style=social" alt="GitHub stars">
-</a>
+<div style="text-align: center; margin-top: 30px;">
+  <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
+    <img src="https://img.shields.io/badge/Android%204.4+-orange.svg?color=orange&logoColor=orange&label=%E6%94%AF%E6%8C%81%E5%AE%89%E5%8D%93%E7%89%88%E6%9C%AC&logo=Android" alt="支持安卓版本">
+  </a>
+  <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
+    <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=Releases&logo=DocuSign" alt="Releases">
+  </a>
+  <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
+    <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=Download&logoColor=yellow&color=yellow" alt="Download">
+  </a>
+  <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
+    <img src="https://img.shields.io/github/stars/jayjd/huyatv?style=social" alt="GitHub stars">
+  </a>
 </div>
+
+<hr style="margin-top: 50px; margin-bottom: 50px;">
 
 ## 一个第三方聚合直播TV客户端，仅供学习与交流使用。该应用仅作为个人兴趣开发，应用没有任何破解行为，所有的内容均来源于网页端，本人不对内容负责。本人不会收集你的个人信息。
 ## 软件仅供交流学习，请于下载后的 24 小时内卸载！
@@ -124,7 +155,6 @@
   </tr>
 </table>
 
-
 # QQ反馈交流群
 QQ频道&测试版优先尝鲜体验🔗 **[点击加入](https://pd.qq.com/s/ajih400ke)**
 
@@ -168,4 +198,6 @@ QQ频道&测试版优先尝鲜体验🔗 **[点击加入](https://pd.qq.com/s/aj
 </table>
 
 ## ？？？
-[![Stargazers over time](https://starchart.cc/jayjd/HuYaTv.svg?variant=adaptive)](https://starchart.cc/jayjd/HuYaTv)
+<a href="https://starchart.cc/jayjd/HuYaTv">
+  <img class="overtime" src="https://starchart.cc/jayjd/HuYaTv.svg?variant=adaptive" alt="Stargazers over time">
+</a>

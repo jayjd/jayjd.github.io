@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google AdSense 代码 -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.google-adsense-account }}"
-       crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <!-- 可以添加自定义的样式文件来美化导航栏 -->
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
 <body>
-  <!-- 广告展示位置 -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="{{ site.google-adsense-account }}"
-       data-ad-slot="YOUR_AD_SLOT"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-  <!-- ... existing code ... -->
+  <!-- 导航栏 -->
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">首页</a></li>
+        <li><a href="{{ '/update' | relative_url }}">更新日志</a></li>
+        <li><a href="{{ '/about' | relative_url }}">关于</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- 输出 Markdown 文件渲染后的内容 -->
+  {{ content }}
 </body>
 </html>

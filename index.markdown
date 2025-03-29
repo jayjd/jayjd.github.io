@@ -80,13 +80,13 @@ title:  "聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/�
 
 <div style="text-align: center; margin-top: 30px;">
   <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-    <img src="https://img.shields.io/badge/Android%204.4+-orange.svg?color=orange&logoColor=orange&label=%E6%94%AF%E6%8C%81%E5%AE%89%E5%8D%93%E7%89%88%E6%9C%AC&logo=Android" alt="支持安卓版本">
+    <img src="https://img.shields.io/badge/%204.4+-orange.svg?color=orange&logoColor=orange&label=支持版本&logo=Android" alt="支持安卓版本">
   </a>
   <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-    <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=Releases&logo=DocuSign" alt="Releases">
+    <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=发行版本&logo=DocuSign" alt="Releases">
   </a>
   <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-    <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=Download&logoColor=yellow&color=yellow" alt="Download">
+    <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=下载次数&logoColor=yellow&color=yellow" alt="Download">
   </a>
   <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
     <img src="https://img.shields.io/github/stars/jayjd/huyatv?style=social" alt="GitHub stars">
@@ -96,7 +96,7 @@ title:  "聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/�
 <hr style="margin-top: 50px; margin-bottom: 50px;">
 
 <div class="disclaimer">
-  <p>一个第三方聚合直播TV客户端，仅供学习与交流使用。该应用仅作为个人兴趣开发，应用没有任何破解行为，所有的内容均来源于网页端，本人不对内容负责。本人不会收集你的个人信息。</p>
+  <p>一个聚合直播TV客户端，仅供学习与交流使用。该应用仅作为个人兴趣开发，应用没有任何破解行为，所有的内容均来源于网页端，本人不对内容负责。本人不会收集你的个人信息。</p>
   <p>软件仅供交流学习，请于下载后的 24 小时内卸载！</p>
   <p>如果本项目存在侵犯您的合法权益的情况，请及时与开发者联系，开发者将会及时删除有关内容。</p>
 </div>

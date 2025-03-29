@@ -5,14 +5,19 @@ title: 更新列表
 
 <ul class="log-list">
   <h2>更新列表</h2>
-  {% for post in site.posts %}
+  {% for post in site.categories.thread %}
     <li class="log-item">
       <div class="log-icon">
         <img src="{{ post.icon }}" alt="{{ post.title }}">
       </div>
       <div class="log-content">
         <h1><a href="{{ post.url | relative_url }}" class="post_thread">{{ post.title }}</a></h1>
-        {{ post.update-content }}
+          {% assign contents = post.update-content | newline_to_br | split: "<br />" %}
+        {% for content in contents limit: 4 %}
+            {% if content != "" %}
+                <p>{{ content }}</p>
+            {% endif %}
+        {% endfor %}
         <!-- 点击下载 -->
         <div style="margin: 10px;">
           <a href="{{ post.url | relative_url }}" class="download-button">

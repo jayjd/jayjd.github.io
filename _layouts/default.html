@@ -177,7 +177,7 @@
   <!-- 输出 Markdown 文件渲染后的内容 -->
   <div class="markdown-body-container">
     {{ content }}
-    {% if page.url contains "/message" or page.url contains "/thread/" %}
+    {% if page.url contains "/message" or page.url contains "/thread/" or page.url contains "/tv/" %}
       <div class="info-section">
         {% if page.url contains "/message" %}
          <h2>🌟 {{page.title}} 🌟 </h2>

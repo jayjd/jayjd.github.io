@@ -78,5 +78,7 @@ navigation:
     link: /update
   - name: 电视软件
     link: /tv
+  - name: 留言板
+    link: /message
   - name: 关于
     link: /about

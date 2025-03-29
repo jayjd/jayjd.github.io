@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/网易CC/电视直播，支持手机/平板/电视/车机"
+title:  "首页"
 ---
 
 <style>
@@ -127,7 +127,7 @@ title:  "聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/�
 </style>
 <div class="disclaimer_banner">
   <div style="text-align: center; margin-top: 50px;"> 
-    <img src="assets\img\ic_channel.png" width="150" height="150" style="border-radius: 50%; box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);">
+    <img src="assets\img\ic_channel.png" alt="聚合直播" width="150" height="150" style="border-radius: 50%; box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);">
     <h2>聚合直播（HuYa）</h2>
   </div>
 

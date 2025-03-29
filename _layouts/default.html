@@ -10,22 +10,7 @@
   <meta name="google-adsense-account" content="{{ site.google-adsense-account }}">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-  <script>
-    const gitalk = new Gitalk({
-      clientID: '{{ .Site.Params.Gitalk.clientID }}',
-      clientSecret: '{{ .Site.Params.Gitalk.clientSecret }}',
-      repo: '{{ .Site.Params.Gitalk.repo }}',
-      owner: '{{ .Site.Params.Gitalk.owner }}',
-      admin: ['{{ .Site.Params.Gitalk.admin }}'],
-      id: location.pathname,
-      labels: ['{{ .Site.Params.Gitalk.labels }}'],
-      pagerDirection: '{{ .Site.Params.Gitalk.pagerDirection }}',
-    })
-    gitalk.render('gitalk-container')
-  </script>
   <script>
     var _hmt = _hmt || [];
     (function () {
@@ -44,63 +29,64 @@
   </amp-ad>
   <style>
     /* 自定义页脚样式 */
-    .site-footer {
-      background-color: #f8f9fa;
-      padding: 40px 20px;
-      margin-top: 60px;
-      border-top: 1px solid #e9ecef;
-    }
+.site-footer {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    color: #666;
+  }
+  
+  .footer-bottom a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    color: #007bff;
+  }
 
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    .footer-section {
-      flex: 1;
-      min-width: 200px;
-    }
-
-    .footer-section h4 {
-      margin-bottom: 15px;
-      color: #333;
-    }
-
-    .footer-section p {
-      margin: 5px 0;
-      color: #666;
-    }
-
-    .social-links a {
-      display: inline-block;
-      margin-right: 10px;
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    .social-links a:hover {
-      text-decoration: underline;
-    }
-
-    .footer-bottom {
-      text-align: center;
-      margin-top: 30px;
-      padding-top: 20px;
-      border-top: 1px solid #e9ecef;
-      color: #666;
-    }
-
-    .footer-bottom a {
-      color: #666;
-      text-decoration: none;
-    }
-
-    .footer-bottom a:hover {
-      color: #007bff;
-    }
   </style>
 </head>
 
@@ -120,6 +106,9 @@
   <!-- 输出 Markdown 文件渲染后的内容 -->
   <div class="markdown-body">
     {{ content }}
+  </div>
+  <div class="info-section">
+    {{ partial "gitalk.html" }}
   </div>
   <!-- 网站底部 -->
   <footer class="site-footer">

@@ -69,3 +69,14 @@ theme: minima
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+navigation:
+  - name: 首页
+    link: /
+  - name: 更新日志
+    link: /update
+  - name: 电视软件
+    link: /tv
+  - name: 关于
+    link: /about

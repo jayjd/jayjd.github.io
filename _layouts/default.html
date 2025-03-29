@@ -9,6 +9,8 @@
   <meta name="keywords" content="{{ site.keywords }}">
   <meta name="google-adsense-account" content="{{ site.google-adsense-account }}">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <script>
     var _hmt = _hmt || [];
     (function () {
@@ -25,6 +27,67 @@
     data-auto-format="rspv" data-full-width="">
     <div overflow=""></div>
   </amp-ad>
+  <style>
+    /* 自定义页脚样式 */
+.site-footer {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    color: #666;
+  }
+  
+  .footer-bottom a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    color: #007bff;
+  }
+
+  </style>
 </head>
 
 <body>
@@ -32,9 +95,11 @@
   <nav>
     <div class="nav-container">
       <ul>
-        <li><a href="{{ '/' | relative_url }}">首页</a></li>
-        <li><a href="{{ '/update' | relative_url }}">更新日志</a></li>
-        <li><a href="{{ '/about' | relative_url }}">关于</a></li>
+        {% for item in site.navigation %}
+        <li class="nav-item {% if page.url == item.link %}active{% endif %}">
+          <a href="{{ item.link | relative_url }}" class="nav-link">{{ item.name }}</a>
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </nav>
@@ -42,6 +107,29 @@
   <div class="markdown-body">
     {{ content }}
   </div>
+  <!-- 网站底部 -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>关于我们</h4>
+        <p>一个专注于直播聚合技术的项目</p>
+      </div>
+      <div class="footer-section">
+        <h4>联系我们</h4>
+        <p>Email: support@example.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>关注我们</h4>
+        <div class="social-links">
+          <a href="https://github.com/jayjd/HuYaTv" target="_blank">GitHub</a>
+          <a href="https://pd.qq.com/s/ajih400ke" target="_blank">QQ频道</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} 聚合直播. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 
 

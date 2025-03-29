@@ -31,11 +31,14 @@ title:  "聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/�
   table {
     border-collapse: collapse;
     width: 100%;
+    font-size: 18px; /* 设置表格字体大小 */
+    margin-top: 20px; /* 设置表格顶部外边距 */
   }
   th, td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
+    font-size: 16px; /* 设置表格单元格字体大小 */
   }
   th {
     background-color: #f2f2f2;
@@ -71,26 +74,77 @@ title:  "聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/�
   .disclaimer p:last-child {
     margin-bottom: 0;
   }
+  /* 顶部样式 */
+.disclaimer_banner {
+   background: linear-gradient(135deg, #007AFF 0%, #34C759 100%);
+   padding: 40px 20px;
+   border-radius: 20px;
+   margin: 30px 0;
+   color: white;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   transition: all 0.3s ease;
+   position: relative;
+   overflow: hidden;
+}
+.disclaimer_banner::before {
+   content: '';
+   position: absolute;
+   top: -50%;
+   left: -50%;
+   width: 200%;
+   height: 200%;
+   background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.01%);
+   background-size: 20px 20px;
+   transform: rotate(45deg);
+   pointer-events: none;
+}
+.disclaimer_banner:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.disclaimer_banner img {
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease;
+}
+.disclaimer_banner img:hover {
+   transform: scale(1.05);
+}
+.disclaimer_banner h2 {
+   margin-top: 20px;
+   font-size: 2.0rem;
+   color: white;
+   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.disclaimer_banner a {
+   display: inline-block;
+   margin: 10px;
+   transition: transform 0.3s ease;
+}
+.disclaimer_banner a:hover {
+   transform: translateY(-3px);
+}
 </style>
+<div class="disclaimer_banner">
+  <div style="text-align: center; margin-top: 50px;"> 
+    <img src="assets\img\ic_channel.png" width="150" height="150" style="border-radius: 50%; box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);">
+    <h2>聚合直播（HuYa）</h2>
+  </div>
 
-<div style="text-align: center; margin-top: 50px;"> 
-  <img src="assets\img\ic_channel.png" width="150" height="150" style="border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
-  <h1>HuYa</h1>
-</div>
-
-<div style="text-align: center; margin-top: 30px;">
-  <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-    <img src="https://img.shields.io/badge/%204.4+-orange.svg?color=orange&logoColor=orange&label=支持版本&logo=Android" alt="支持安卓版本">
-  </a>
-  <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-    <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=发行版本&logo=DocuSign" alt="Releases">
-  </a>
-  <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-    <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=下载次数&logoColor=yellow&color=yellow" alt="Download">
-  </a>
-  <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-    <img src="https://img.shields.io/github/stars/jayjd/huyatv?style=social" alt="GitHub stars">
-  </a>
+  <div style="text-align: center; margin-top: 30px;">
+    <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
+      <img src="https://img.shields.io/badge/%204.4+-orange.svg?color=orange&logoColor=orange&label=支持版本&logo=Android" alt="支持安卓版本">
+    </a>
+    <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
+      <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=发行版本&logo=DocuSign" alt="Releases">
+    </a>
+    <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
+      <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=下载次数&logoColor=yellow&color=yellow" alt="Download">
+    </a>
+    <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
+      <img src="https://img.shields.io/github/stars/jayjd/huyatv?style=social" alt="GitHub stars">
+    </a>
+  </div>
 </div>
 
 <hr style="margin-top: 50px; margin-bottom: 50px;">

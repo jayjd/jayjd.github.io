@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  "首页"
+title:  "聚合直播（HuYa）"
 ---
 
 <style>

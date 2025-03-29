@@ -350,4 +350,35 @@ nav ul li a:hover::after {
     nav.active ul {
         display: block;
     }
+
+    /* 优化底部样式 */
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: auto;
+        padding: 0 15px;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+        padding-top: 15px;
+        margin-top: 20px;
+    }
 }

@@ -31,76 +31,75 @@
   </amp-ad>
   <style>
     /* 自定义页脚样式 */
-.site-footer {
-    background-color: #f8f9fa;
-    padding: 40px 20px;
-    margin-top: 60px;
-    border-top: 1px solid #e9ecef;
-  }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  .footer-section {
-    flex: 1;
-    min-width: 200px;
-  }
-  
-  .footer-section h4 {
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  .footer-section p {
-    margin: 5px 0;
-    color: #666;
-  }
-  
-  .social-links a {
-    display: inline-block;
-    margin-right: 10px;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .social-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #e9ecef;
-    color: #666;
-  }
-  
-  .footer-bottom a {
-    color: #666;
-    text-decoration: none;
-  }
-  
-  .footer-bottom a:hover {
-    color: #007bff;
-  }
+    .site-footer {
+      background-color: #f8f9fa;
+      padding: 40px 20px;
+      margin-top: 60px;
+      border-top: 1px solid #e9ecef;
+    }
 
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .footer-section {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .footer-section p {
+      margin: 5px 0;
+      color: #666;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin-right: 10px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #e9ecef;
+      color: #666;
+    }
+
+    .footer-bottom a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    .footer-bottom a:hover {
+      color: #007bff;
+    }
   </style>
 </head>
 
 <body>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const navLinks = document.querySelectorAll('nav ul li a');
       const currentPageTitle = document.querySelector('.current-page-title');
-  
+
       if (currentPageTitle) {
         currentPageTitle.textContent = '首页';
-  
+
         navLinks.forEach(link => {
           link.addEventListener('click', () => {
             // 移除所有 active 状态
@@ -110,7 +109,7 @@
             currentPageTitle.textContent = link.textContent;
           });
         });
-  
+
         const currentPath = window.location.pathname;
         navLinks.forEach(link => {
           if (link.getAttribute('href') === currentPath) {
@@ -123,38 +122,38 @@
   </script>
   <script>
     function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
-  }
-
-  // 将代码包装在 DOMContentLoaded 事件中
-  document.addEventListener('DOMContentLoaded', function() {
-    
-    // 获取所有导航链接
-    const navLinks = document.querySelectorAll('nav ul li a');
-    const currentPageTitle = document.querySelector('.current-page-title');
-
-    if (currentPageTitle) {
-      // 默认显示“首页”
-      currentPageTitle.textContent = '首页';
-
-      // 为每个导航链接添加点击事件
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          // 更新当前板块名称
-          currentPageTitle.textContent = link.textContent;
-        });
-      });
-
-      // 根据当前 URL 设置初始板块名称
-      const currentPath = window.location.pathname;
-      navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
-          currentPageTitle.textContent = link.textContent;
-        }
-      });
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('active');
     }
-  });
+
+    // 将代码包装在 DOMContentLoaded 事件中
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // 获取所有导航链接
+      const navLinks = document.querySelectorAll('nav ul li a');
+      const currentPageTitle = document.querySelector('.current-page-title');
+
+      if (currentPageTitle) {
+        // 默认显示“首页”
+        currentPageTitle.textContent = '首页';
+
+        // 为每个导航链接添加点击事件
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            // 更新当前板块名称
+            currentPageTitle.textContent = link.textContent;
+          });
+        });
+
+        // 根据当前 URL 设置初始板块名称
+        const currentPath = window.location.pathname;
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === currentPath) {
+            currentPageTitle.textContent = link.textContent;
+          }
+        });
+      }
+    });
   </script>
 
   <!-- 导航栏 -->
@@ -179,7 +178,14 @@
   <div class="markdown-body-container">
     {{ content }}
     {% if page.url contains "/message" or page.url contains "/thread/" %}
-      {% include gitalk.html %}
+      <div class="info-section">
+        {% if page.url contains "/message" %}
+         <h2>🌟 {{page.title}} 🌟 </h2>
+        {% else %}
+         <h2>🌟 {{page.title}} 🌟 评论区</h2>
+        {% endif %}
+        {% include gitalk.html %}
+      </div>
     {% endif %}
   </div>
   <!-- 网站底部 -->

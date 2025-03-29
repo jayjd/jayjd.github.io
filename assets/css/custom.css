@@ -25,7 +25,9 @@ nav {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+.current-page-title {
+    display: none; 
+}
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -288,5 +290,64 @@ nav ul li a:hover::after {
 
     body {
         font-size: 14px;
+    }
+
+     /* 导航栏样式 */
+     .nav-container {
+        padding: 0 10px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    /* 当前板块名称 */
+    .current-page-title {
+        display: block;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        background-color: rgba(34, 34, 34, 0.95);
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+        font-size: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    nav ul li a {
+        padding: 15px;
+    }
+
+    /* 汉堡菜单 */
+    .menu-toggle {
+        display: block;
+        padding: 15px;
+        cursor: pointer;
+        order: 2; /* 将汉堡菜单放在最右边 */
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+
+    nav.active ul {
+        display: block;
     }
 }

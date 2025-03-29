@@ -91,9 +91,50 @@
 </head>
 
 <body>
+  <script>
+    function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+
+  // 将代码包装在 DOMContentLoaded 事件中
+  document.addEventListener('DOMContentLoaded', function() {
+    // 获取所有导航链接
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const currentPageTitle = document.querySelector('.current-page-title');
+
+    if (currentPageTitle) {
+      // 默认显示“首页”
+      currentPageTitle.textContent = '首页';
+
+      // 为每个导航链接添加点击事件
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          // 更新当前板块名称
+          currentPageTitle.textContent = link.textContent;
+        });
+      });
+
+      // 根据当前 URL 设置初始板块名称
+      const currentPath = window.location.pathname;
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+          currentPageTitle.textContent = link.textContent;
+        }
+      });
+    }
+  });
+  </script>
+
   <!-- 导航栏 -->
   <nav>
     <div class="nav-container">
+      <div class="current-page-title">首页</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul>
         {% for item in site.navigation %}
         <li class="nav-item {% if page.url == item.link %}active{% endif %}">

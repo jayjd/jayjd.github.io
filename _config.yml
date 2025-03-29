@@ -80,5 +80,3 @@ navigation:
     link: /tv
   - name: 留言板
     link: /message
-  - name: 关于
-    link: /about

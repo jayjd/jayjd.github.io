@@ -176,8 +176,11 @@
     </div>
   </nav>
   <!-- 输出 Markdown 文件渲染后的内容 -->
-  <div class="markdown-body">
+  <div class="markdown-body-container">
     {{ content }}
+    {% if page.url contains "/message" or page.url contains "/thread/" %}
+      {% include gitalk.html %}
+    {% endif %}
   </div>
   <!-- 网站底部 -->
   <footer class="site-footer">

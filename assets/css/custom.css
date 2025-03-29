@@ -9,7 +9,7 @@ body {
     /* 设置宽度为 80%，并居中 */
 }
 
-.markdown-body {
+.markdown-body-container {
     width: 80%;
     margin: 0 auto;
 }

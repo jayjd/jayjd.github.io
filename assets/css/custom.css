@@ -274,7 +274,7 @@ nav ul li a:active {
     .info-row img {
         margin: 0 auto;
     }
-    .markdown-body{
+    .markdown-body-container{
         width: 90%;
     }
     .log-item {

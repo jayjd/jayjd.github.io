@@ -68,8 +68,17 @@ nav ul li a:hover {
 /* 添加活动菜单项指示器 */
 nav ul li a.active {
     background-color: rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+    color: #007BFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* 新增：轻微放大效果 */
+    transition: all 0.2s ease; /* 新增：平滑过渡 */
 }
-
+nav ul li a.active::after {
+    width: 100%;
+    background-color: #007BFF; /* 新增：下划线颜色 */
+    height: 3px; /* 新增：加粗下划线 */
+}
 /* 添加下划线动画 */
 nav ul li a::after {
     content: '';
@@ -85,6 +94,18 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+/* 确保 active 状态优先级高于 hover */
+nav ul li a.active:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* 更深的背景色 */
+    transform: scale(1.05); /* 保持放大效果 */
+}
+
+/* 添加点击后的动画效果 */
+nav ul li a:active {
+    transform: scale(0.95); /* 点击时轻微缩小 */
+    transition: transform 0.1s ease; /* 快速过渡 */
 }
 
 /* 日志列表样式，添加特定类名 .log-list */
@@ -329,7 +350,6 @@ nav ul li a:hover::after {
     nav ul li a {
         padding: 15px;
     }
-
     /* 汉堡菜单 */
     .menu-toggle {
         display: block;

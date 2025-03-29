@@ -94,6 +94,34 @@
 
 <body>
   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('nav ul li a');
+      const currentPageTitle = document.querySelector('.current-page-title');
+  
+      if (currentPageTitle) {
+        currentPageTitle.textContent = '首页';
+  
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            // 移除所有 active 状态
+            navLinks.forEach(link => link.classList.remove('active'));
+            // 添加当前点击项的 active 状态
+            link.classList.add('active');
+            currentPageTitle.textContent = link.textContent;
+          });
+        });
+  
+        const currentPath = window.location.pathname;
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+            currentPageTitle.textContent = link.textContent;
+          }
+        });
+      }
+    });
+  </script>
+  <script>
     function toggleMenu() {
     const nav = document.querySelector('nav');
     nav.classList.toggle('active');
@@ -101,6 +129,7 @@
 
   // 将代码包装在 DOMContentLoaded 事件中
   document.addEventListener('DOMContentLoaded', function() {
+    
     // 获取所有导航链接
     const navLinks = document.querySelectorAll('nav ul li a');
     const currentPageTitle = document.querySelector('.current-page-title');

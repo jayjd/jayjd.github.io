@@ -221,6 +221,7 @@ nav ul li a:active {
 
 
 .log-icon img {
+    width: 120px;
     margin-right: 10px; /* 图标与标题之间的间距 */
     vertical-align: middle; /* 垂直居中 */
     border-radius: 10px; /* 圆角  */    

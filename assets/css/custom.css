@@ -300,9 +300,6 @@ nav ul li a:active {
         margin: 10px;
         /* 图标与标题之间的间距 */
         vertical-align: middle;
-        /* 垂直居中 */
-        border-radius: 10px;
-        /* 圆角  */
     }
 
     .log-content {

@@ -141,22 +141,22 @@ title:  "聚合直播（HuYa）"
 </style>
 <div class="disclaimer_banner">
   <div style="text-align: center; margin-top: 50px;"> 
-    <img src="assets\img\ic_channel.png" alt="聚合直播" width="150" height="150" style="border-radius: 50%; box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);">
+    <img src="assets\img\ic_channel.png" alt="聚合直播" loading="lazy" width="150" height="150" style="border-radius: 50%; box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);">
     <h2>聚合直播（HuYa）</h2>
   </div>
 
   <div style="text-align: center; margin-top: 30px;">
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://img.shields.io/badge/%204.4+-orange.svg?color=orange&logoColor=orange&label=支持版本&logo=Android" alt="支持安卓版本">
+      <img src="https://img.shields.io/badge/%204.4+-orange.svg?color=orange&logoColor=orange&label=支持版本&logo=Android" alt="支持安卓版本" loading="lazy">
     </a>
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=发行版本&logo=DocuSign" alt="Releases">
+      <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=发行版本&logo=DocuSign" alt="Releases" loading="lazy">
     </a>
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=下载次数&logoColor=yellow&color=yellow" alt="Download">
+      <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=下载次数&logoColor=yellow&color=yellow" alt="Download" loading="lazy">
     </a>
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://img.shields.io/github/stars/jayjd/huyatv?style=social" alt="GitHub stars">
+      <img src="https://img.shields.io/github/stars/jayjd/huyatv?style=social" alt="GitHub stars" loading="lazy">
     </a>
   </div>
 </div>
@@ -264,17 +264,17 @@ title:  "聚合直播（HuYa）"
 <div class="disclaimer">
 <table>
     <tr>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505365-c6d58c01-9c3e-4bda-bbc9-c9c5728dd068.png" alt="Screenshot_20240125_090207"></td>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505415-bddf1e77-c503-46b6-bf5c-c7997e35a742.png" alt="Screenshot_20240125_090330"></td>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505414-1f620fab-1c60-4f34-be15-34c248c13c18.png" alt="Screenshot_20240125_090316"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505365-c6d58c01-9c3e-4bda-bbc9-c9c5728dd068.png" alt="Screenshot_20240125_090207" loading="lazy"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505415-bddf1e77-c503-46b6-bf5c-c7997e35a742.png" alt="Screenshot_20240125_090330" loading="lazy"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505414-1f620fab-1c60-4f34-be15-34c248c13c18.png" alt="Screenshot_20240125_090316" loading="lazy"></td>
     </tr>
     <tr>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505410-692b8dd5-278a-480f-85ba-bdc7a6a2220d.png" alt="Screenshot_20240125_090305"></td>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505408-0b7fc632-31e8-4f61-9f0c-b8a9167b361a.png" alt="Screenshot_20240125_090256"></td>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505406-730ffd50-b14e-43db-9c7a-6ebe3c2a4f3d.png" alt="Screenshot_20240125_090246"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505410-692b8dd5-278a-480f-85ba-bdc7a6a2220d.png" alt="Screenshot_20240125_090305" loading="lazy"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505408-0b7fc632-31e8-4f61-9f0c-b8a9167b361a.png" alt="Screenshot_20240125_090256" loading="lazy"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505406-730ffd50-b14e-43db-9c7a-6ebe3c2a4f3d.png" alt="Screenshot_20240125_090246" loading="lazy"></td>
     </tr>
     <tr>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505403-1dc21677-6fe3-4179-8e2c-ed32422b8dc9.png" alt="Screenshot_20240125_090229"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/299505403-1dc21677-6fe3-4179-8e2c-ed32422b8dc9.png" alt="Screenshot_20240125_090229" loading="lazy"></td>
         <td></td>
         <td></td>
     </tr>
@@ -285,25 +285,25 @@ title:  "聚合直播（HuYa）"
 <div class="disclaimer">
 <table>
     <tr>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/253479717-69ccfe05-1189-4d0c-9fb8-725481539559.png" alt="Screenshot_20230714_133126"></td>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/253479791-720d1b15-4685-4892-a7b8-caed3a664b0d.png" alt="Screenshot_20230714_133202"></td>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/253479889-7734e7d4-3d05-4c17-b1dc-e9f5838303e9.png" alt="Screenshot_20230714_133230"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/253479717-69ccfe05-1189-4d0c-9fb8-725481539559.png" alt="Screenshot_20230714_133126" loading="lazy"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/253479791-720d1b15-4685-4892-a7b8-caed3a664b0d.png" alt="Screenshot_20230714_133202" loading="lazy"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/253479889-7734e7d4-3d05-4c17-b1dc-e9f5838303e9.png" alt="Screenshot_20230714_133230" loading="lazy"></td>
     </tr>
     <tr>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/239187450-28362523-c3bd-4a7c-8b8e-28e591599df4.png" alt="Screenshot_20230518_152636"></td>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/239187468-868a4d3e-d9bb-4a15-8fe8-27ab2f95e48b.png" alt="Screenshot_20230518_152654"></td>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/239187493-213de232-8e61-4fef-bfd3-87b8f345d1fe.png" alt="Screenshot_20230518_152710"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/239187450-28362523-c3bd-4a7c-8b8e-28e591599df4.png" alt="Screenshot_20230518_152636" loading="lazy"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/239187468-868a4d3e-d9bb-4a15-8fe8-27ab2f95e48b.png" alt="Screenshot_20230518_152654" loading="lazy"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/239187493-213de232-8e61-4fef-bfd3-87b8f345d1fe.png" alt="Screenshot_20230518_152710" loading="lazy"></td>
     </tr>
     <tr>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/238866293-ab5506f0-e002-45ae-adde-1c94e935ab9d.png" alt="Screenshot_20230517_152159"></td>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/238866301-5e27cb96-ad59-447c-89ba-d57a240bcd1e.png" alt="Screenshot_20230517_152231"></td>
-        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/238866314-82b51eb7-ec66-4266-af7d-eb5be64ef855.png" alt="Screenshot_20230517_152251"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/238866293-ab5506f0-e002-45ae-adde-1c94e935ab9d.png" alt="Screenshot_20230517_152159" loading="lazy"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/238866301-5e27cb96-ad59-447c-89ba-d57a240bcd1e.png" alt="Screenshot_20230517_152231" loading="lazy"></td>
+        <td><img src="https://gitee.com/jayjd/hyt/releases/download/assets/238866314-82b51eb7-ec66-4266-af7d-eb5be64ef855.png" alt="Screenshot_20230517_152251" loading="lazy"></td>
     </tr>
 </table>
 </div>
 ### ？？？
 <div class="disclaimer">
 <a href="https://starchart.cc/jayjd/HuYaTv">
-  <img class="overtime" src="https://starchart.cc/jayjd/HuYaTv.svg?variant=adaptive" alt="Stargazers over time">
+  <img class="overtime" src="https://starchart.cc/jayjd/HuYaTv.svg?variant=adaptive" alt="Stargazers over time" loading="lazy">
 </a>
 </div>

@@ -8,7 +8,7 @@ title: 更新列表
   {% for post in site.categories.thread %}
     <li class="log-item">
       <div class="log-icon">
-        <img src="{{ post.icon }}"  width="120" height="120" alt="{{ post.title }}">
+        <img src="{{ post.icon }}"  width="120" height="120" alt="{{ post.title }}" loading="lazy">
       </div>
       <div class="log-content">
         <h1><a href="{{ post.url | relative_url }}" class="post_thread">{{ post.title }}&nbsp;{{post.version}}</a></h1>

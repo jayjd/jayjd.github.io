@@ -1,21 +1,21 @@
 <style>
     h1 {
-      color: #333;
-      text-align: center;
+        color: #333;
+        text-align: center;
     }
 
     h2 {
-      color: #555;
+        color: #555;
     }
 
     h3 {
-      color: #777;
+        color: #777;
     }
 
     p {
-      line-height: 1.6;
+        line-height: 1.6;
     }
-  </style>
+</style>
 <h1>🌟 {{page.title}}&nbsp;{{page.version}} 🌟</h1>
 <div class="info-section">
     <!-- 图标信息 -->
@@ -48,60 +48,64 @@
 <div class="info-section">
     <h2>重要声明</h2>
     {% if page.categories contains "thread" %}
-        <p>目前，6.0 以下的版本基本已无明显 BUG，我们仅保证该版本能够正常播放。</p>
-        <p>由于这些版本过于久远，缺乏真实的测试环境，后续新增功能将仅针对 6.0 以上的设备进行适配。</p>
+    <p>目前，6.0 以下的版本基本已无明显 BUG，我们仅保证该版本能够正常播放。</p>
+    <p>由于这些版本过于久远，缺乏真实的测试环境，后续新增功能将仅针对 6.0 以上的设备进行适配。</p>
     {% else %}
-        <p>本页面提供的软件均来自互联网，仅用于学习和研究目的，与本人无关。</p>
-        <p>请在使用前仔细阅读相关软件的许可协议，并确保遵守相关法律法规。</p>
-        <p>如果您是软件开发者或版权所有者，认为本页面内容侵犯了您的权益，请及时联系我进行删除处理。</p>
+    <p>本页面提供的软件均来自互联网，仅用于学习和研究目的，与本人无关。</p>
+    <p>请在使用前仔细阅读相关软件的许可协议，并确保遵守相关法律法规。</p>
+    <p>如果您是软件开发者或版权所有者，认为本页面内容侵犯了您的权益，请及时联系我进行删除处理。</p>
     {% endif %}
-    
+
 </div>
 <div class="info-section">
     <h2>更新内容</h2>
-      {% assign contents = page.update-content | newline_to_br | split: "<br />" %}
+    {% assign contents = page.update-content | newline_to_br | split: "<br />" %}
     {% for content in contents %}
-        {% if content != "" %}
-            <p>{{ content }}</p>
-        {% endif %}
+    {% if content != "" %}
+    <p>{{ content }}</p>
+    {% endif %}
     {% endfor %}
 </div>
 <div class="info-section">
     <h2>下载地址</h2>
     <div class="info-row-posts">
-            {% if page.lanzou_download != "" %}
-                <div style="display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle;">
-                    {% if page.lanzou_pwd != "" %}
-                        <a href="{{page.lanzou_download}}" class="download-button" style="margin-top: 34px;">
-                            <div style="width: 34px; height: 34px; overflow: hidden;">
-                            <img src="https://pc.woozooo.com/img/logo3.gif" alt="lanzou" style="width: 200%; height: 150%;object-fit: cover; object-position: 9%;padding-top:8px"/></div>&nbsp;&nbsp;蓝奏下载
-                        </a>
-                        <div style="font-size: 16px; color: #666; margin-top: 6px; cursor: pointer; padding: 4px 8px; border-radius: 4px; transition: background-color 0.2s;" 
-                            onmouseover="this.style.backgroundColor='#f0f0f0'" 
-                            onmouseout="this.style.backgroundColor='transparent'" 
-                            onclick="copyPassword('{{page.lanzou_pwd}}')">密码：<span style="color: #007bff; font-weight: bold;">{{page.lanzou_pwd}}</span>
-                        </div>
-                    {% else %}
-                        <a href="{{page.lanzou_download}}" class="download-button">
-                            <div style="width: 34px; height: 34px; overflow: hidden;">
-                            <img src="https://pc.woozooo.com/img/logo3.gif" alt="lanzou" style="width: 200%; height: 150%;object-fit: cover; object-position: 9%;padding-top:8px"/></div>&nbsp;&nbsp;蓝奏下载
-                        </a>
-                    {% endif %}
-                </div>
-                &nbsp;
-            {% endif %}
-            {% if page.gitee_download != "" %}
-            <a href="{{page.gitee_download}}" class="download-button">
-                {{site.gitee-svg}}&nbsp;&nbsp;Gitee下载
+        {% if page.lanzou_download != "" %}
+        <div style="display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle;">
+            {% if page.lanzou_pwd != "" %}
+            <a href="{{page.lanzou_download}}" class="download-button" style="margin-top: 34px;">
+                <div style="width: 34px; height: 34px; overflow: hidden;">
+                    <img src="https://pc.woozooo.com/img/logo3.gif" alt="lanzou"
+                        style="width: 200%; height: 150%;object-fit: cover; object-position: 9%;padding-top:8px" />
+                </div>&nbsp;&nbsp;蓝奏下载
             </a>
-            &nbsp;
-            {% endif %}
-            {% if page.github_download != "" %}
-            <a href="{{page.github_download}}" class="download-button">
-                {{site.github-svg}}&nbsp;&nbsp;GitHub下载
+            <div style="font-size: 16px; color: #666; margin-top: 6px; cursor: pointer; padding: 4px 8px; border-radius: 4px; transition: background-color 0.2s;"
+                onmouseover="this.style.backgroundColor='#f0f0f0'" onmouseout="this.style.backgroundColor='transparent'"
+                onclick="copyPassword('{{page.lanzou_pwd}}')">密码：<span
+                    style="color: #007bff; font-weight: bold;">{{page.lanzou_pwd}}</span>
+            </div>
+            {% else %}
+            <a href="{{page.lanzou_download}}" class="download-button">
+                <div style="width: 34px; height: 34px; overflow: hidden;">
+                    <img src="https://pc.woozooo.com/img/logo3.gif" alt="lanzou"
+                        style="width: 200%; height: 150%;object-fit: cover; object-position: 9%;padding-top:8px" />
+                </div>&nbsp;&nbsp;蓝奏下载
             </a>
             {% endif %}
         </div>
+        &nbsp;
+        {% endif %}
+        {% if page.gitee_download != "" %}
+        <a href="{{page.gitee_download}}" class="download-button">
+            {{site.gitee-svg}}&nbsp;&nbsp;Gitee下载
+        </a>
+        &nbsp;
+        {% endif %}
+        {% if page.github_download != "" %}
+        <a href="{{page.github_download}}" class="download-button">
+            {{site.github-svg}}&nbsp;&nbsp;GitHub下载
+        </a>
+        {% endif %}
+    </div>
 </div>
 <script>
     function copyPassword(password) {
@@ -113,4 +117,4 @@
         document.body.removeChild(tempInput);
         alert('密码已复制');
     }
-    </script>
+</script>

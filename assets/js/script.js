@@ -35,20 +35,22 @@ function doAction(action, kv) {
         return false;
     }
     kv['do'] = action;
-    console.log(kv);
-    fetch(`http://${ip}:8383/action`, {
+    
+    // 使用相对协议
+    const url = `//${ip}:8383/action`;
+    
+    fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
-        body: JSON.stringify(kv),
-        mode: 'no-cors' // 添加 no-cors 模式
+        body: new URLSearchParams(kv).toString()
     })
     .then(response => {
         if (!response.ok) {
-            throw new Error(`HTTP 错误! 状态码: ${response.text}`);
+            throw new Error(`HTTP 错误! 状态码: ${response.status}`);
         }
-        return response.json();
+        return response.text();
     })
     .then(data => {
         console.log(data);

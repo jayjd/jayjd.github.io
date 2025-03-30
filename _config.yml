@@ -77,7 +77,7 @@ navigation:
     link: /update
   - name: 电视软件
     link: /tv
-  - name: 电视推送
-    link: /push
+  # - name: 电视推送
+  #   link: /push
   - name: 留言板
     link: /message

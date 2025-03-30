@@ -1,3 +1,6 @@
+
+
+
 function checkIPConnection() {
     const ip = document.getElementById('ip_address').value.trim();
     
@@ -7,24 +10,41 @@ function checkIPConnection() {
         alert('请输入有效的IP地址');
         return;
     }
-
-    // 显示加载提示
     document.getElementById('loadingToast').style.display = 'block';
+    // 心跳间隔时间（单位：毫秒）
+    const heartbeatInterval = 30000; // 30秒
+    let heartbeatTimer;
+    // 创建 WebSocket 连接
+    const ws = new WebSocket(`ws://${ip}:8283`);
 
-    // 使用fetch进行检测
-    const startTime = Date.now();
-    fetch(`http://${ip}:8383`, { mode: 'no-cors' })
-        .then(() => {
-            const responseTime = Date.now() - startTime;
-            alert(`IP地址 ${ip} 可以访问，响应时间：${responseTime}ms`);
-        })
-        .catch(() => {
-            alert(`无法访问IP地址 ${ip}`);
-        })
-        .finally(() => {
-            // 隐藏加载提示
-            document.getElementById('loadingToast').style.display = 'none';
-        });
+    ws.onopen = () => {
+        document.getElementById('loadingToast').style.display = 'none';
+        console.log('WebSocket 连接成功');
+        // 启动心跳
+        heartbeatTimer = setInterval(() => {
+            if (ws.readyState === WebSocket.OPEN) {
+                ws.send('heartbeat'); // 发送心跳消息
+                console.log('发送心跳包');
+            }
+        }, heartbeatInterval);
+    };
+
+    ws.onmessage = (event) => {
+        console.log('收到消息:', event.data);
+    };
+
+    ws.onerror = (error) => {
+        console.error('WebSocket 错误:', error);
+    };
+
+    ws.onclose = () => {
+        console.log('WebSocket 连接关闭');
+        // 清除心跳定时器
+        if (heartbeatTimer) {
+            clearInterval(heartbeatTimer);
+        }
+    };
+
 }
 // 通用函数优化
 function doAction(action, kv) {

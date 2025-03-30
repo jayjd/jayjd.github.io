@@ -11,7 +11,7 @@ title: 更新列表
         <img src="{{ post.icon }}"  width="120" height="120" alt="{{ post.title }}">
       </div>
       <div class="log-content">
-        <h1><a href="{{ post.url | relative_url }}" class="post_thread">{{ post.title }}</a></h1>
+        <h1><a href="{{ post.url | relative_url }}" class="post_thread">{{ post.title }}&nbsp;{{post.version}}</a></h1>
           {% assign contents = post.update-content | newline_to_br | split: "<br />" %}
         {% for content in contents limit: 4 %}
             {% if content != "" %}

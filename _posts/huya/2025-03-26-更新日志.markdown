@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "HuYa 所有更新日志记录"
-version: 2.1.23
+version: 
 icon: "/assets/img/ic_channel.png"
 package: com.ccc.huya
 md5: 123456789abcdef123456789abcdef12
@@ -15,7 +15,7 @@ lanzou_pwd: ""
 gitee_download: "https://gitee.com/jayjd/hyy/releases/download/2.1.23/HuYa-2.1.23-20250319.apk"
 github_download: "https://github.com/jayjd/HuYaTv/releases/download/2.1.23/HuYa-2.1.23-20250319.apk"
 ---
-<h1>🌟 {{page.title}} 🌟</h1>
+<h1>🌟 {{page.title}}&nbsp;{{page.version}} 🌟</h1>
 <div class="info-section">
     <h2>重要声明</h2>
     <p>目前，6.0 以下的版本基本已无明显 BUG，我们仅保证该版本能够正常播放。</p>

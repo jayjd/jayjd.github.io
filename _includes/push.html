@@ -1,0 +1,133 @@
+<div class="page">
+    <div class="page__bd" style="height: 100%;">
+        <div class="panel">
+            <div class="form">
+                <div class="form-header">
+                    <h2>HuYa · 直播推送</h2>
+                </div>
+                <div class="form-content">
+                    <!-- IP 检测 -->
+                    <div class="input-group">
+                        <input id="ip_address" type="text" value="192.168." placeholder="请输入IP地址" />
+                    </div>
+                    <div class="button-group">
+                        <button onclick="checkIPConnection(); return false;">检测IP连通性</button>
+                    </div>
+                    <!-- Cookie 推送 -->
+                    <div class="input-group">
+                        <input id="cookie_key_word" type="text" placeholder="支持虎牙、哔哩哔哩 Cookie" />
+                    </div>
+                    <div class="button-group">
+                        <button onclick="pushFunctions.CookiePush(); return false;">推送Cookie</button>
+                    </div>
+
+                    <!-- 直播推送 -->
+                    <div class="input-group">
+                        <input id="search_key_word" type="text" placeholder="DYu:房间号,Hy/DYin/Bili/YY:直播地址..." />
+                    </div>
+                    <div class="button-group">
+                        <button onclick="pushFunctions.HDKPush(); return false;">Hy/DYin/Bili/YY推送</button>
+                        <button onclick="pushFunctions.DouYuPush(); return false;">DYu推送</button>
+                    </div>
+
+                    <!-- 在线源/TVBOX源 -->
+                    <div class="input-group">
+                        <input id="tv_key_word" type="text" placeholder="请输入在线源或TVBOX源地址" />
+                    </div>
+                    <div class="button-group">
+                        <button onclick="pushFunctions.TvLivePush(); return false;">在线源</button>
+                        <button onclick="pushFunctions.FanLivePush(); return false;">TVBOX源</button>
+                    </div>
+
+                    <!-- 收藏夹操作 -->
+                    <div class="button-group">
+                        <button onclick="downloadFile(); return false;">备份收藏夹</button>
+                        <input type="file" id="file_uploader" style="display:none;" onchange="uploadTip()" multiple />
+                        <button onclick="uploadFile()">恢复收藏夹/安装APK/本地源</button>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h2>支持作者</h2>
+                    <div style="text-align: center;">
+                        <p>如果分享的软件对你有帮助，欢迎通过微信赞赏支持作者</p>
+                        <div
+                            style="display: inline-block; padding: 16px; background: white; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.2s ease;">
+                            <img id="wechatQRCode" src="/assets/img/wechat-reward-qrcode.jpg" alt="微信赞赏二维码" loading="lazy"
+                                style="width: 200px; height: 200px; border-radius: 16px; transition: transform 0.2s ease;"
+                                onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        </div>
+                        <p style="color: #666; font-size: 14px; margin-top: 12px;">
+                            <span id="wechatTip">长按识别二维码进行赞赏</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 通用弹窗 -->
+<div class="modal" id="commonModal" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">文件上传</h3>
+        </div>
+        <div class="modal-body">
+            <p id="uploadTipContent">确认上传以下文件吗？</p>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn cancel" onclick="doUpload(0)">取消</button>
+            <button class="modal-btn confirm" onclick="doUpload(1)">确定</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="uploadTipOk" style="display: none;">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">推送消息</h3>
+        </div>
+        <div class="modal-body">
+            <p id="uploadTipContent">推送成功！</p>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn confirm" onclick="doUpload(0)">确定</button>
+        </div>
+    </div>
+</div>
+
+<!-- 加载提示 -->
+<div class="loading" id="loadingToast" style="display: none;">
+    <div class="loading-overlay"></div>
+    <div class="loading-content">
+        <div class="spinner"></div>
+        <p>加载中</p>
+    </div>
+</div>
+<script>
+    // 检测是否在微信浏览器中
+    function isWechatBrowser() {
+       return /micromessenger/i.test(navigator.userAgent);
+   }
+
+   // 更新提示信息
+   if (isWechatBrowser()) {
+       document.getElementById('wechatTip').textContent = '在微信中长按二维码 → 识别图中二维码';
+   } else {
+       document.getElementById('wechatQRCode').src = 'https://gitee.com/jayjd/hyt/releases/download/2.1.0/wechat-reward-qrcode.jpg';
+   }
+   function copyPassword(password) {
+       const tempInput = document.createElement('input');
+       tempInput.value = password;
+       document.body.appendChild(tempInput);
+       tempInput.select();
+       document.execCommand('copy');
+       document.body.removeChild(tempInput);
+       alert('密码已复制');
+   }
+</script>
+<script src="../assets/js/script.js"></script>

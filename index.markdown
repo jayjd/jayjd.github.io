@@ -76,7 +76,8 @@ title:  "聚合直播（HuYa）"
   }
   /* 顶部样式 */
 .disclaimer_banner {
-   background: linear-gradient(135deg, #007AFF 0%, #34C759 100%);
+   background: linear-gradient(135deg, #007AFF, #00C853, #FFC107, #FF5252, #007AFF);
+   background-size: 400% 100%;
    padding: 40px 20px;
    border-radius: 20px;
    margin: 30px 0;
@@ -86,6 +87,18 @@ title:  "聚合直播（HuYa）"
    transition: all 0.3s ease;
    position: relative;
    overflow: hidden;
+   animation: gradientScroll 8s ease infinite;
+}
+@keyframes gradientScroll {
+   0% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+   100% {
+       background-position: 0% 50%;
+   }
 }
 .disclaimer_banner::before {
    content: '';
@@ -124,6 +137,7 @@ title:  "聚合直播（HuYa）"
 .disclaimer_banner a:hover {
    transform: translateY(-3px);
 }
+
 </style>
 <div class="disclaimer_banner">
   <div style="text-align: center; margin-top: 50px;"> 

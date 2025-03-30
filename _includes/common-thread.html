@@ -119,16 +119,21 @@
                 onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
         </div>
         <p style="color: #666; font-size: 14px; margin-top: 12px;">
-            {% if page.wechat %}
-            在微信中长按二维码 → 识别图中二维码
-            {% else %}
-            长按识别二维码进行赞赏
-            {% endif %}
+            <span id="wechatTip">长按识别二维码进行赞赏</span>
         </p>
     </div>
 </div>
 
 <script>
+     // 检测是否在微信浏览器中
+     function isWechatBrowser() {
+        return /micromessenger/i.test(navigator.userAgent);
+    }
+
+    // 更新提示信息
+    if (isWechatBrowser()) {
+        document.getElementById('wechatTip').textContent = '在微信中长按二维码 → 识别图中二维码';
+    }
     function copyPassword(password) {
         const tempInput = document.createElement('input');
         tempInput.value = password;

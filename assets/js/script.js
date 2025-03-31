@@ -206,7 +206,7 @@ async function doUpload(yes) {
                 alert('请输入有效的IP地址');
                 return false;
             }
-            document.getElementById('loadingToast').style.display = 'block';
+            $('#loadingToast').show();
 
             $.ajax({
                 url: `https://${ip}:8383/upload`,

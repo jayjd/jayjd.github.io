@@ -91,7 +91,7 @@ function downloadFile() {
         alert('请输入有效的IP地址');
         return false;
     }
-    const fileUrl = `http://${ip}:8383/collection_data.json`;
+    const fileUrl = `https://${ip}:8383/collection_data.json`;
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'collection_data.json';

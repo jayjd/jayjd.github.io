@@ -11,42 +11,21 @@ function checkIPConnection() {
         return;
     }
     document.getElementById('loadingToast').style.display = 'block';
-    // 心跳间隔时间（单位：毫秒）
-    const heartbeatInterval = 30000; // 30秒
-    let heartbeatTimer;
-    // 创建 WebSocket 连接
-    const ws = new WebSocket(`wss://${ip}:8283`);
-
-    ws.onopen = () => {
-        document.getElementById('loadingToast').style.display = 'none';
-        console.log('WebSocket 连接成功');
-        // 启动心跳
-        heartbeatTimer = setInterval(() => {
-            if (ws.readyState === WebSocket.OPEN) {
-                ws.send('heartbeat'); // 发送心跳消息
-                console.log('发送心跳包');
-            }
-        }, heartbeatInterval);
-    };
-
-    ws.onmessage = (event) => {
-        console.log('收到消息:', event.data);
-    };
-
-    ws.onerror = (error) => {
-        document.getElementById('loadingToast').style.display = 'none';
-        console.error('WebSocket 错误:', error);
-    };
-
-    ws.onclose = () => {
-        document.getElementById('loadingToast').style.display = 'none';
-        console.log('WebSocket 连接关闭');
-        // 清除心跳定时器
-        if (heartbeatTimer) {
-            clearInterval(heartbeatTimer);
+    const testUrl = `//${ip}:8383/status`;
+    $.ajax({
+        url: testUrl,
+        type: 'GET',
+        timeout: 5000,
+        success: function() {
+            alert(`IP ${ip} 访问正常`);
+        },
+        error: function(xhr, status, error) {
+            alert(`IP ${ip} 访问失败`);
+        },
+        complete: function() {
+            document.getElementById('loadingToast').style.display = 'none';
         }
-    };
-
+    });
 }
 // 通用函数优化
 function doAction(action, kv) {
@@ -91,7 +70,7 @@ function downloadFile() {
         alert('请输入有效的IP地址');
         return false;
     }
-    const fileUrl = `https://${ip}:8383/collection_data.json`;
+    const fileUrl = `//${ip}:8383/collection_data.json`;
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'collection_data.json';
@@ -210,7 +189,7 @@ function doUpload(yes) {
         $('#loadingToast').show();
 
         $.ajax({
-            url: `https://${ip}:8383/upload`,
+            url: `//${ip}:8383/upload`,
             type: 'post',
             data: formData,
             processData: false,

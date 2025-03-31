@@ -34,10 +34,12 @@ function checkIPConnection() {
     };
 
     ws.onerror = (error) => {
+        document.getElementById('loadingToast').style.display = 'none';
         console.error('WebSocket 错误:', error);
     };
 
     ws.onclose = () => {
+        document.getElementById('loadingToast').style.display = 'none';
         console.log('WebSocket 连接关闭');
         // 清除心跳定时器
         if (heartbeatTimer) {

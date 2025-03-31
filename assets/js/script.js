@@ -188,6 +188,7 @@ function uploadTip() {
 }
 
 async function doUpload(yes) {
+    document.getElementById('commonModal').style.display = 'none';
     if (yes === 1) {
         const files = document.getElementById('file_uploader').files;
         if (files.length > 0) {
@@ -203,24 +204,43 @@ async function doUpload(yes) {
                 return false;
             }
             document.getElementById('loadingToast').style.display = 'block';
-            try {
-                await fetch(`https://${ip}:8383/upload`, {
-                    method: 'POST',
-                    body: formData
-                });
-                document.getElementById('uploadTipOk').style.display = 'block';
-            } catch (error) {
-                console.error('上传异常:', error);
-                alert('上传失败: ' + error.message);
-            } finally {
-                document.getElementById('loadingToast').style.display = 'none';
-                // 清空文件选择器的值
-                document.getElementById('file_uploader').value = '';
-            }
+
+            $.ajax({
+                url: `https://${ip}:8383/upload`,
+                type: 'post',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function () {
+                    $('#loadingToast').hide();
+                    $('#uploadTipOk').show();
+                },
+                error: function (xhr, status, error) {
+                   console.error('上传异常:', error);
+                },
+                complete: function () {
+                    $('#loadingToast').hide();
+                }
+            });
+
+
+            // try {
+            //     await fetch(`https://${ip}:8383/upload`, {
+            //         method: 'POST',
+            //         body: formData
+            //     });
+                
+            // } catch (error) {
+            //     console.error('上传异常:', error);
+            //     alert('上传失败: ' + error.message);
+            // } finally {
+            //     document.getElementById('loadingToast').style.display = 'none';
+            //     // 清空文件选择器的值
+            //     document.getElementById('file_uploader').value = '';
+            // }
         }
     }else{
         document.getElementById('uploadTipOk').style.display = 'none';
-        document.getElementById('commonModal').style.display = 'none';
     }
 }
 

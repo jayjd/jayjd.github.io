@@ -3,7 +3,7 @@
 
 function checkIPConnection() {
     const ip = document.getElementById('ip_address').value.trim();
-    
+
     // 简单的IP地址格式验证
     const ipPattern = /^(\d{1,3}\.){2}\d{1,3}(\.\d{1,3})?$/;
     if (!ipPattern.test(ip)) {
@@ -59,14 +59,14 @@ function doAction(action, kv) {
     kv['do'] = action;
     // 使用相对协议
     const url = `//${ip}:8383/action`;
-    
+
     // alert(JSON.stringify(kv));
     $.post(url, kv, function (data) {
         console.log(data);
         alert(data);
-    }).fail(function(error) {
+    }).fail(function (error) {
         console.error('请求异常:', error);
-        alert(error.status+':'+error.statusText);
+        alert(error.status + ':' + error.statusText);
         // 你可以在这里添加更多的异常处理逻辑，例如显示错误提示给用户
         // alert('请求发生错误，请稍后重试');
     });
@@ -193,44 +193,41 @@ function uploadTip() {
 function doUpload(yes) {
     $('#uploadTip').hide();
     if (yes === 1) {
-        const files = document.getElementById('file_uploader').files;
-        if (files.length > 0) {
-            let files = $('#file_uploader')[0].files;
-            if (files.length <= 0)
-                return false;
-            var formData = new FormData();
-            formData.append('path', current_root);
-            for (i = 0; i < files.length; i++) {
-                formData.append("files-" + i, files[i]);
-            }
-            const ip = document.getElementById('ip_address').value.trim();
-            const ipPattern = /^(\d{1,3}\.){3}\d{1,3}$/;
-            if (!ipPattern.test(ip)) {
-                alert('请输入有效的IP地址');
-                return false;
-            }
-            $('#loadingToast').show();
-
-            $.ajax({
-                url: `https://${ip}:8383/upload`,
-                type: 'post',
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function () {
-                    $('#loadingToast').hide();
-                    $('#uploadTipOk').show();
-                },
-                error: function (xhr, status, error) {
-                   console.error('上传异常:', error);
-                   alert(error.status+':'+error.statusText);
-                },
-                complete: function () {
-                    $('#loadingToast').hide();
-                }
-            });
+        let files = $('#file_uploader')[0].files;
+        if (files.length <= 0)
+            return false;
+        var formData = new FormData();
+        formData.append('path', current_root);
+        for (i = 0; i < files.length; i++) {
+            formData.append("files-" + i, files[i]);
         }
-    }else{
+        const ip = document.getElementById('ip_address').value.trim();
+        const ipPattern = /^(\d{1,3}\.){3}\d{1,3}$/;
+        if (!ipPattern.test(ip)) {
+            alert('请输入有效的IP地址');
+            return false;
+        }
+        $('#loadingToast').show();
+
+        $.ajax({
+            url: `https://${ip}:8383/upload`,
+            type: 'post',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function () {
+                $('#loadingToast').hide();
+                $('#uploadTipOk').show();
+            },
+            error: function (xhr, status, error) {
+                console.error('上传异常:', error);
+                alert(error.status + ':' + error.statusText);
+            },
+            complete: function () {
+                $('#loadingToast').hide();
+            }
+        });
+    } else {
         $('#uploadTipOk').hide();
     }
 }

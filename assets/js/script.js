@@ -64,7 +64,7 @@ function doAction(action, kv) {
     fetch(url, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/json'
         },
         body: new URLSearchParams(kv).toString()
     })

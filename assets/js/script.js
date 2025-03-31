@@ -15,7 +15,7 @@ function checkIPConnection() {
     const heartbeatInterval = 30000; // 30秒
     let heartbeatTimer;
     // 创建 WebSocket 连接
-    const ws = new WebSocket(`ws://${ip}:8283`);
+    const ws = new WebSocket(`wss://${ip}:8283`);
 
     ws.onopen = () => {
         document.getElementById('loadingToast').style.display = 'none';

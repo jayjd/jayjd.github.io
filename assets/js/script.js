@@ -220,6 +220,7 @@ async function doUpload(yes) {
                 },
                 error: function (xhr, status, error) {
                    console.error('上传异常:', error);
+                   alert(error.status+':'+error.statusText);
                 },
                 complete: function () {
                     $('#loadingToast').hide();

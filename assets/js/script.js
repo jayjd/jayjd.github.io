@@ -195,11 +195,14 @@ function doUpload(yes) {
     if (yes === 1) {
         const files = document.getElementById('file_uploader').files;
         if (files.length > 0) {
-            const formData = new FormData();
-            formData.append('path', fileOperations.current_root);
-            Array.from(files).forEach((file, i) => {
-                formData.append(`files-${i}`, file);
-            });
+            let files = $('#file_uploader')[0].files;
+            if (files.length <= 0)
+                return false;
+            var formData = new FormData();
+            formData.append('path', current_root);
+            for (i = 0; i < files.length; i++) {
+                formData.append("files-" + i, files[i]);
+            }
             const ip = document.getElementById('ip_address').value.trim();
             const ipPattern = /^(\d{1,3}\.){3}\d{1,3}$/;
             if (!ipPattern.test(ip)) {

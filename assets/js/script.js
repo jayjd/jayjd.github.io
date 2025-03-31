@@ -223,6 +223,7 @@ async function doUpload(yes) {
                 },
                 complete: function () {
                     $('#loadingToast').hide();
+                    $('#uploadTipOk').show();
                 }
             });
         }

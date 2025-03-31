@@ -180,15 +180,18 @@ function uploadFile() {
 
 function uploadTip() {
     const files = document.getElementById('file_uploader').files;
-    if (files.length > 0) {
-        const fileNames = Array.from(files).map(file => file.name).join(',');
-        document.getElementById('uploadTipContent').textContent = fileNames;
-        document.getElementById('commonModal').style.display = 'block';
+    if (files.length <= 0)
+        return false;
+    let tip = '';
+    for (var i = 0; i < files.length; i++) {
+        tip += (files[i].name) + ',';
     }
+    $('#uploadTipContent').html(tip);
+    $('#uploadTip').show();
 }
 
 async function doUpload(yes) {
-    document.getElementById('commonModal').style.display = 'none';
+    $('#uploadTip').hide();
     if (yes === 1) {
         const files = document.getElementById('file_uploader').files;
         if (files.length > 0) {
@@ -222,25 +225,9 @@ async function doUpload(yes) {
                     $('#loadingToast').hide();
                 }
             });
-
-
-            // try {
-            //     await fetch(`https://${ip}:8383/upload`, {
-            //         method: 'POST',
-            //         body: formData
-            //     });
-                
-            // } catch (error) {
-            //     console.error('上传异常:', error);
-            //     alert('上传失败: ' + error.message);
-            // } finally {
-            //     document.getElementById('loadingToast').style.display = 'none';
-            //     // 清空文件选择器的值
-            //     document.getElementById('file_uploader').value = '';
-            // }
         }
     }else{
-        document.getElementById('uploadTipOk').style.display = 'none';
+        $('#uploadTipOk').hide();
     }
 }
 

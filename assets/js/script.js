@@ -57,30 +57,18 @@ function doAction(action, kv) {
         return false;
     }
     kv['do'] = action;
-    
     // 使用相对协议
     const url = `//${ip}:8383/action`;
     
-    fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: new URLSearchParams(kv).toString()
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP 错误! 状态码: ${response.status}`);
-        }
-        return response.text();
-    })
-    .then(data => {
+    alert(JSON.stringify(kv));
+    $.post(url, kv, function (data) {
         console.log(data);
         alert(data);
-    })
-    .catch(error => {
+    }).fail(function(error) {
         console.error('请求异常:', error);
-        alert(`请求失败: ${error.message}`);
+        alert(error.status+':'+error.statusText);
+        // 你可以在这里添加更多的异常处理逻辑，例如显示错误提示给用户
+        // alert('请求发生错误，请稍后重试');
     });
     return false;
 }
@@ -216,10 +204,9 @@ async function doUpload(yes) {
             }
             document.getElementById('loadingToast').style.display = 'block';
             try {
-                await fetch(`http://${ip}:8383/upload`, {
+                await fetch(`https://${ip}:8383/upload`, {
                     method: 'POST',
-                    body: formData,
-                    mode: 'no-cors'
+                    body: formData
                 });
                 document.getElementById('uploadTipOk').style.display = 'block';
             } catch (error) {

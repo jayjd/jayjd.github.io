@@ -190,7 +190,7 @@ function uploadTip() {
     $('#uploadTip').show();
 }
 
-async function doUpload(yes) {
+function doUpload(yes) {
     $('#uploadTip').hide();
     if (yes === 1) {
         const files = document.getElementById('file_uploader').files;

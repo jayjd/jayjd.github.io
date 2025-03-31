@@ -60,7 +60,7 @@ function doAction(action, kv) {
     // 使用相对协议
     const url = `//${ip}:8383/action`;
     
-    alert(JSON.stringify(kv));
+    // alert(JSON.stringify(kv));
     $.post(url, kv, function (data) {
         console.log(data);
         alert(data);

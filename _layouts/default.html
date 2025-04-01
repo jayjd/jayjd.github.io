@@ -64,6 +64,8 @@
   </script>
   <script>
     function toggleMenu() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      menuToggle.classList.toggle('active');
       const nav = document.querySelector('nav');
       nav.classList.toggle('active');
     }
@@ -97,7 +99,24 @@
       }
     });
   </script>
+  <style>
+    .menu-toggle span {
+      transition: all 0.3s ease;
+      transform-origin: center;
+    }
 
+    .menu-toggle.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  </style>
   <!-- 导航栏 -->
   <nav>
     <div class="nav-container">

@@ -311,13 +311,16 @@ nav ul li a:active {
 /* 标题样式 */
 
 .section-title h2 {
-    color: rgba(255, 255, 255, 0.8); /* 新增透明度 0.9 */
+    color: rgba(255, 255, 255, 0.8);
+    /* 新增透明度 0.9 */
     border-radius: 5px;
     display: inline-block;
     margin: 20px 0;
     vertical-align: top;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 可选：增加文字阴影提升可读性 */
-    transition: all 0.3s ease; /* 添加过渡效果 */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 可选：增加文字阴影提升可读性 */
+    transition: all 0.3s ease;
+    /* 添加过渡效果 */
     letter-spacing: 0.5em;
 }
 
@@ -370,8 +373,6 @@ nav ul li a:active {
 
 /* 手机端样式 */
 @media screen and (max-width: 600px) {
-
-
     .info-row-posts {
         display: flex;
         align-items: center;
@@ -582,6 +583,157 @@ nav ul li a:active {
     color: var(--text-color);
 }
 
+/* index css */
+.disclaimer table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 18px;
+    /* 设置表格字体大小 */
+}
+
+.disclaimer th,
+td {
+    border: 1px solid var(--border-color);
+
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+    /* 设置表格单元格字体大小 */
+}
+
+.disclaimer th {
+    background-color: var(--card-bg);
+    /* 设置表格表头背景颜色 */
+    ;
+}
+
+.disclaimer tr:nth-child(even) {
+    background-color: var(--card-bg);
+    /* 设置表格偶数行背景颜色 */
+    ;
+}
+
+.disclaimer td img {
+    max-width: 100%;
+    /* 图片最大宽度为单元格宽度 */
+    height: auto;
+    /* 保持图片比例 */
+}
+
+.overtime {
+    display: block;
+    margin: 20px auto;
+    /* 上下外边距为 20px，左右居中 */
+    max-width: 80%;
+    /* 最大宽度为父元素的 80% */
+    height: auto;
+    /* 保持图片比例 */
+}
+
+.disclaimer {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    font-size: 14px;
+    color: var(--text-color);
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.disclaimer p {
+    line-height: 1.8;
+}
+
+.disclaimer p:last-child {
+    margin-bottom: 0;
+}
+
+.home_icon {
+    margin:60px 0px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.home_icon:hover {
+    transform: scale(1.2);
+}
+.home_buttons{
+    margin: 20px 0;
+}
+.disclaimer_banner h2 {
+    font-size: 2.0rem;
+    margin: 0;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 顶部样式 */
+.disclaimer_banner {
+    background: linear-gradient(135deg,
+            var(--gradient-start),
+            var(--gradient-mid1),
+            var(--gradient-mid2),
+            var(--gradient-end),
+            var(--gradient-start));
+    background-size: 400% 100%;
+    /* 上右下左 */
+    padding: 0px 30px 40px 30px;
+    border-radius: 20px;
+    margin: 30px 0;
+    color: white;
+    box-shadow: 0 10px 20px var(--border-color);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: gradientScroll 8s ease infinite;
+}
+
+hr {
+    border: var(--border-color) 1px solid;
+}
+
+@keyframes gradientScroll {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.disclaimer_banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, transparent 10.01%);
+    background-size: 20px 20px;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+
+.disclaimer_banner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.disclaimer_banner a {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.disclaimer_banner a:hover {
+    transform: translateY(-3px);
+}
 
 
 :root {

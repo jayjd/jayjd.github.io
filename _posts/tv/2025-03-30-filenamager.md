@@ -12,8 +12,8 @@ update-content: |
     2.提升用户体验
 date:   2025-03-30 08:02:49 +0800
 categories: tv
-lanzou_download: "https://wwty.lanzouu.com/iXUQv2s3uv9e"
-lanzou_pwd: "asbb"
+lanzou_download: "https://jayjd.lanzouu.com/b0017d633a"
+lanzou_pwd: "3wa3"
 gitee_download: ""
 github_download: ""
 ---

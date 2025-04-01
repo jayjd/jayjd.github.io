@@ -9,22 +9,6 @@ title:  "聚合直播（HuYa）"
     color: #333; /* 设置全局文字颜色 */
     line-height: 1.6; /* 设置行间距 */
   }
-  h1 {
-    font-size: 36px; /* 设置一级标题字体大小 */
-    color: #333; /* 设置一级标题文字颜色 */
-    margin-top: 20px; /* 设置一级标题顶部外边距 */
-  }
-  h2 {
-    font-size: 28px; /* 设置二级标题字体大小 */
-    color: #333; /* 设置二级标题文字颜色 */
-    margin-top: 40px; /* 设置二级标题顶部外边距 */
-  }
-  h3 {
-    font-size: 22px; /* 设置三级标题字体大小 */
-    color: #333; /* 设置三级标题文字颜色 */
-    text-align: center;
-    margin-top: 30px; /* 设置三级标题顶部外边距 */
-  }
   p {
     margin-bottom: 20px; /* 设置段落底部外边距 */
   }
@@ -35,16 +19,16 @@ title:  "聚合直播（HuYa）"
     margin-top: 20px; /* 设置表格顶部外边距 */
   }
   th, td {
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color); /* 设置表格边框 */;
     padding: 8px;
     text-align: center;
     font-size: 16px; /* 设置表格单元格字体大小 */
   }
   th {
-    background-color: #f2f2f2;
+    background-color: var(--card-bg); /* 设置表格表头背景颜色 */;
   }
   tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: var(--card-bg); /* 设置表格偶数行背景颜色 */;
   }
   td img {
         max-width: 100%; /* 图片最大宽度为单元格宽度 */
@@ -58,13 +42,13 @@ title:  "聚合直播（HuYa）"
   }
 
   .disclaimer {
-    background-color: #f8f9fa;
+    background-color: var(--card-bg);
     padding: 20px;
     border-radius: 20px;
-    border: 1px solid #e9ecef;
+    border: 1px solid var(--border-color);
     margin: 30px 0;
     font-size: 14px;
-    color: #6c757d;
+    color: var(--text-color);
     box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
   }
   .disclaimer p {
@@ -76,19 +60,28 @@ title:  "聚合直播（HuYa）"
   }
   /* 顶部样式 */
 .disclaimer_banner {
-   background: linear-gradient(135deg, #007AFF, #00C853, #FFC107, #FF5252, #007AFF);
+   background: linear-gradient(135deg,
+        var(--gradient-start), 
+        var(--gradient-mid1),
+        var(--gradient-mid2),
+        var(--gradient-end),
+        var(--gradient-start));
    background-size: 400% 100%;
    padding: 40px 20px;
    border-radius: 20px;
    margin: 30px 0;
    color: white;
-   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   box-shadow: 0 10px 20px var(--border-color);
    text-align: center;
    transition: all 0.3s ease;
    position: relative;
    overflow: hidden;
    animation: gradientScroll 8s ease infinite;
 }
+hr{
+   border: var(--border-color) 1px solid;
+}
+
 @keyframes gradientScroll {
    0% {
        background-position: 0% 50%;

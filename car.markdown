@@ -1,15 +1,15 @@
 ---
 layout: default
-title: 电视软件下载 - 聚合直播TV版/盒子投屏/智能电视应用
-description: "精选优质电视软件，包含直播观看、视频点播、投屏工具等多种应用，支持智能电视、电视盒子、投影仪等大屏设备"
-keywords: "电视软件,电视直播软件,电视盒子软件,智能电视应用,TV软件下载,电视投屏软件,安卓电视软件"
+title: "车机软件下载 - 车载娱乐应用精选"
+description: "精选优质车载应用软件，包含车机直播、视频播放、导航地图等多种应用，支持主流车载系统，让车内娱乐更丰富"
+keywords: "车机软件,车载应用,车机直播,车载娱乐软件,车机视频播放器,车载系统应用,车机安卓软件"
 ---
 
 <ul class="log-list">
   <div class="section-title">
-    <h2>电视软件</h2>
+    <h2>车机软件</h2>
   </div>
-  {% for post in site.categories.tv %}
+  {% for post in site.categories.car %}
     <li class="log-item">
       <div class="log-icon">
         <img src="{{ post.icon }}" alt="{{ post.title }}">

@@ -3,7 +3,8 @@ body {
     padding: 0;
     /* font-family: Arial, sans-serif; */
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #f5f7fa;  /* 柔和的浅灰蓝色 */
+    background-color: #f5f7fa;
+    /* 柔和的浅灰蓝色 */
     margin: 0 auto;
     width: 100%;
     /* 设置宽度为 80%，并居中 */
@@ -25,9 +26,11 @@ nav {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .current-page-title {
-    display: none; 
+    display: none;
 }
+
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -71,14 +74,20 @@ nav ul li a.active {
     font-weight: bold;
     color: #007BFF;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05); /* 新增：轻微放大效果 */
-    transition: all 0.2s ease; /* 新增：平滑过渡 */
+    transform: scale(1.05);
+    /* 新增：轻微放大效果 */
+    transition: all 0.2s ease;
+    /* 新增：平滑过渡 */
 }
+
 nav ul li a.active::after {
     width: 100%;
-    background-color: #007BFF; /* 新增：下划线颜色 */
-    height: 3px; /* 新增：加粗下划线 */
+    background-color: #007BFF;
+    /* 新增：下划线颜色 */
+    height: 3px;
+    /* 新增：加粗下划线 */
 }
+
 /* 添加下划线动画 */
 nav ul li a::after {
     content: '';
@@ -98,14 +107,18 @@ nav ul li a:hover::after {
 
 /* 确保 active 状态优先级高于 hover */
 nav ul li a.active:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* 更深的背景色 */
-    transform: scale(1.05); /* 保持放大效果 */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* 更深的背景色 */
+    transform: scale(1.05);
+    /* 保持放大效果 */
 }
 
 /* 添加点击后的动画效果 */
 nav ul li a:active {
-    transform: scale(0.95); /* 点击时轻微缩小 */
-    transition: transform 0.1s ease; /* 快速过渡 */
+    transform: scale(0.95);
+    /* 点击时轻微缩小 */
+    transition: transform 0.1s ease;
+    /* 快速过渡 */
 }
 
 /* 日志列表样式，添加特定类名 .log-list */
@@ -163,13 +176,15 @@ nav ul li a:active {
     align-items: center;
     margin-bottom: 10px;
 }
+
 .info-row-home {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     justify-content: center;
 }
-.info-row-posts{
+
+.info-row-posts {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -190,7 +205,7 @@ nav ul li a:active {
 
 .info-label {
     width: 120px;
-    font-size:larger;
+    font-size: larger;
     font-weight: bold;
 }
 
@@ -222,46 +237,98 @@ nav ul li a:active {
 
 .log-icon img {
     width: 120px;
-    margin-right: 10px; /* 图标与标题之间的间距 */
-    vertical-align: middle; /* 垂直居中 */
-    border-radius: 50%; /* 圆角  */    
-  }
+    margin-right: 10px;
+    /* 图标与标题之间的间距 */
+    vertical-align: middle;
+    /* 垂直居中 */
+    border-radius: 50%;
+    /* 圆角  */
+}
 
-  /* 日志项样式 */
-  .log-item {
+/* 日志项样式 */
+.log-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-  }
+}
 
-  .log-item:hover {
+.log-item:hover {
     transform: translateY(-5px);
-  }
-  /* 日志标题样式 */
-  .log-item h1 {
+}
+
+/* 日志标题样式 */
+.log-item h1 {
     margin: 0 0 10px 0;
     font-size: 1.2em;
-  }
+}
 
-  .log-item h1 a {
+.log-item h1 a {
     color: #007BFF;
     text-decoration: none;
-  }
+}
 
-  .log-item h2 a:hover {
+.log-item h2 a:hover {
     text-decoration: underline;
-  }
-   .log-icon {
-    margin-right: 10px;
-  }
-  .log-content {
-    flex-grow: 1;
-  }
- .date {
-    margin-left: 20px;
-  }
+}
 
+.log-icon {
+    margin-right: 10px;
+}
+
+.log-content {
+    flex-grow: 1;
+}
+
+.date {
+    margin-left: 20px;
+}
+/* 标题样式 */
+
+.section-title h2 {
+    font-size: 24px;
+    color: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.section-title {
+    background: linear-gradient(135deg, #007AFF, #00C853, #FFC107, #FF5252, #007AFF);
+    background-size: 400% 100%;
+    /* padding: 40px 20px; */
+    border-radius: 20px;
+    margin: 20px 0;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: gradientScroll 8s ease infinite;
+ }
+ @keyframes gradientScroll {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+ }
+ .section-title::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.01%);
+    background-size: 20px 20px;
+    transform: rotate(45deg);
+    pointer-events: none;
+ }
 
 /* 手机端样式 */
 @media screen and (max-width: 600px) {
@@ -272,30 +339,38 @@ nav ul li a:active {
         margin-left: 0px;
         justify-content: center;
     }
+
     .info-row img {
         margin: 0 auto;
     }
-    .markdown-body-container{
+
+    .markdown-body-container {
         width: 96%;
     }
+
     .log-item {
         flex-direction: column;
     }
-    .info-label{
+
+    .info-label {
         text-align: center;
     }
+
     .info-row {
         flex-direction: column;
     }
+
     .info-row-label {
         margin-top: 10px;
         display: flex;
         text-align: start;
         margin-bottom: 10px;
     }
+
     .download-button {
         margin: 0 auto;
     }
+
     .log-icon img {
         margin: 10px;
         /* 图标与标题之间的间距 */
@@ -311,11 +386,12 @@ nav ul li a:active {
         font-size: 14px;
     }
 
-    nav{
+    nav {
         width: 100%;
     }
-     /* 导航栏样式 */
-     .nav-container {
+
+    /* 导航栏样式 */
+    .nav-container {
         padding: 0 10px;
         justify-content: space-between;
         position: relative;
@@ -331,6 +407,7 @@ nav ul li a:active {
         left: 50%;
         transform: translateX(-50%);
     }
+
     nav ul {
         flex-direction: column;
         display: none;
@@ -351,12 +428,14 @@ nav ul li a:active {
     nav ul li a {
         padding: 15px;
     }
+
     /* 汉堡菜单 */
     .menu-toggle {
         display: block;
         padding: 15px;
         cursor: pointer;
-        order: 2; /* 将汉堡菜单放在最右边 */
+        order: 2;
+        /* 将汉堡菜单放在最右边 */
     }
 
     .menu-toggle span {

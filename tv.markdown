@@ -2,8 +2,11 @@
 layout: default
 title: 软件列表
 ---
+
 <ul class="log-list">
-  <h2>软件列表</h2>
+  <div class="section-title">
+    <h2>软件列表</h2>
+  </div>
   {% for post in site.categories.tv %}
     <li class="log-item">
       <div class="log-icon">

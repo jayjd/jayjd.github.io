@@ -2,9 +2,10 @@
 layout: default
 title: 更新列表
 ---
-
 <ul class="log-list">
-  <h2>更新列表</h2>
+  <div class="section-title">
+    <h2>更新列表</h2>
+  </div>
   {% for post in site.categories.thread %}
     <li class="log-item">
       <div class="log-icon">

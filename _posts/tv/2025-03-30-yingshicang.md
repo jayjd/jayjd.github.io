@@ -1,6 +1,8 @@
 ---
 layout: default
-title:  "影视仓"
+title: "影视仓 - 全能影视播放投屏神器"
+description: "影视仓支持本地视频播放、在线视频点播、电视直播、手机投屏等功能，内置多个播放器内核，支持倍速播放和清屏功能"
+keywords: "影视仓,影视仓TV版,手机投屏软件,视频播放器,在线影视,电视直播,视频点播,短剧播放"
 version: 6.0.6
 icon: "/assets/appicon/ysc.png"
 package: com.huawei.himovceie

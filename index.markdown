@@ -1,6 +1,5 @@
 ---
 layout: default
-title:  "聚合直播（HuYa）"
 ---
 <div class="disclaimer_banner">
   <div> 

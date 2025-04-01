@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/网易CC/电视直播，支持手机/平板/电视/车机
+title: 聚合直播(HuYa) - 全平台直播聚合观看神器
 description: >- # this means to ignore newlines until "baseurl:"
-  聚合直播(HuYa),支持虎牙/抖音/快手/哔哩哔哩/斗鱼/YY/网易CC/电视直播，支持手机/平板/电视/车机
-keywords: 聚合直播,HuYa,虎牙第三方,虎牙电视版,抖音电视版,快手电视版,哔哩哔哩电视版,斗鱼电视版,电视直播,手机直播
+  聚合直播(HuYa),一站式观看虎牙/抖音/快手/B站/斗鱼/YY等直播平台,支持全平台设备,让直播观看更简单
+keywords: 聚合直播,HuYa,虎牙直播,抖音直播,快手直播,B站直播,斗鱼直播,电视直播,手机直播,电视盒子直播
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

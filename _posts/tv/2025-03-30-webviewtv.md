@@ -1,6 +1,8 @@
 ---
 layout: default
-title:  "WebView 电视"
+title: "WebView电视 - 智能电视网页浏览器"
+description: "专为智能电视设计的网页浏览器，支持遥控器操作，可浏览各类网站，观看在线视频，适配大屏显示"
+keywords: "WebView电视,电视浏览器,智能电视浏览器,TV浏览器,安卓电视浏览器,大屏浏览器,网页浏览器"
 version: 1.10.7
 icon: "/assets/appicon/webviewtv.png"
 package: com.vasthread.webviewtv.v2

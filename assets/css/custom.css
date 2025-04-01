@@ -43,7 +43,7 @@ body {
 /* 重构后的导航栏样式 */
 nav {
     background-color: var(--nav-bg);
-    color: white;
+    color: var(--text-color);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -78,7 +78,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     padding: 8px 16px;
     display: block;
@@ -441,7 +441,7 @@ nav ul li a:active {
     /* 当前板块名称 */
     .current-page-title {
         display: block;
-        color: white;
+        color: var(--text-color);
         font-weight: 500;
         font-size: 20px;
         position: absolute;
@@ -452,7 +452,7 @@ nav ul li a:active {
     nav ul {
         flex-direction: column;
         display: none;
-        background-color: rgba(34, 34, 34, 0.95);
+        background-color: var(--nav-bg);
         width: 100%;
         position: absolute;
         top: 60px;
@@ -483,7 +483,7 @@ nav ul li a:active {
         display: block;
         width: 25px;
         height: 3px;
-        background: white;
+        background: var(--text-color);
         margin: 5px 0;
         transition: all 0.3s ease;
     }
@@ -739,7 +739,7 @@ hr {
 :root {
     --bg-color: #f5f7fa;
     --text-color: #333;
-    --nav-bg: rgba(34, 34, 34, 0.95);
+    --nav-bg: rgba(255, 255, 255, 0.95);
     --card-bg: #f9f9f9;
     --card-border: #ddd;
     --border-color: #ddd;

@@ -125,6 +125,16 @@
         tempInput.select();
         document.execCommand('copy');
         document.body.removeChild(tempInput);
-        alert('密码已复制');
+        
+        // 创建提示元素
+        const toast = document.createElement('div');
+        toast.className = 'copy-toast';
+        toast.textContent = '密码已复制';
+        document.body.appendChild(toast);
+        
+        // 动画结束后移除提示
+        setTimeout(() => {
+            document.body.removeChild(toast);
+        }, 1500);
     }
 </script>

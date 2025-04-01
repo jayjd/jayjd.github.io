@@ -725,6 +725,50 @@ td {
     }
 }
 
+/* Toast 提醒 */
+.copy-toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: toastFadeInOut 1.5s ease;
+}
+
+.copy-toast::before {
+    content: '✓';
+    font-weight: bold;
+    color: #fff;
+}
+
+@keyframes toastFadeInOut {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    15% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    85% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+}
 /* 顶部样式 */
 .disclaimer_banner {
     background: linear-gradient(135deg,

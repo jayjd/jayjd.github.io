@@ -31,7 +31,7 @@ keywords: "车机软件,车载应用,车机直播,车载娱乐软件,车机视�
           &nbsp;&nbsp;点击下载</a>
         </div>
       </div>
-      <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <span class="date">{{ post.last_modified_at | date: "%Y-%m-%d" }}</span>
     </li>
     {% endif %}
   {% endfor %}

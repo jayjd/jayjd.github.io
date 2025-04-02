@@ -30,7 +30,7 @@ keywords: "聚合直播更新,HuYa更新日志,版本更新记录,功能更新,�
           &nbsp;&nbsp;点击下载</a>
         </div>
       </div>
-      <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <span class="date">{{ post.last_modified_at | date: "%Y-%m-%d" }}</span>
     </li>
     {% endif %}
   {% endfor %}

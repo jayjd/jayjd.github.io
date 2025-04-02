@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+Allow: /tv
+Allow: /car
+Allow: /thread
+Allow: /message
+Allow: /assets/appicon/
+Allow: /assets/img/
+Allow: /assets/icon/
+
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /_layouts/
+Disallow: /_includes/
+Disallow: /_data/
+Disallow: /_config.yml
+Disallow: /404.html
+
+# 禁止所有爬虫爬取特定文件类型
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+
+# 站点地图
+Sitemap: https://jayjd.github.io/sitemap.xml
+
+# 爬虫抓取延迟（每次请求间隔）
+Crawl-delay: 1

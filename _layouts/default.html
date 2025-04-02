@@ -25,9 +25,8 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
   <meta name="google-adsense-account" content="{{ site.google-adsense-account }}">
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/push.css' | relative_url }}">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <link rel="preload" href="{{ '/assets/css/push.css' | relative_url }}">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/assets/js/click-effect.js"></script>
 
@@ -43,8 +42,6 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9311012147988614"
-    crossorigin="anonymous"></script>
   <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
   <amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-9311012147988614" data-ad-slot="3171455213"
     data-auto-format="rspv" data-full-width="">

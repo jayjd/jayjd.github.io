@@ -5,7 +5,7 @@ layout: null
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- 首页 -->
     <url>
-        <loc>https://jayjd.github.io</loc>
+        <loc>{{ site.url }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -13,7 +13,7 @@ layout: null
 
     <!-- TV页面 -->
     <url>
-        <loc>https://jayjd.github.io/tv</loc>
+        <loc>{{ site.url }}/tv</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
@@ -21,7 +21,7 @@ layout: null
 
     <!-- 车载页面 -->
     <url>
-        <loc>https://jayjd.github.io/car</loc>
+        <loc>{{ site.url }}/car</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
@@ -29,7 +29,7 @@ layout: null
 
     <!-- 更新页面 -->
     <url>
-        <loc>https://jayjd.github.io/update</loc>
+        <loc>{{ site.url }}/update</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
@@ -37,7 +37,7 @@ layout: null
 
     <!-- 消息页面 -->
     <url>
-        <loc>https://jayjd.github.io/message</loc>
+        <loc>{{ site.url }}/message</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>

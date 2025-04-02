@@ -9,7 +9,9 @@ keywords: "车机软件,车载应用,车机直播,车载娱乐软件,车机视�
   <div class="section-title">
     <h2>车机软件</h2>
   </div>
-  {% for post in site.categories.car %}
+    {% assign sorted_posts = site.posts | sort: 'last_modified_at' | reverse %}
+   {% for post in sorted_posts %}
+   {% if post.categories contains 'car' %}
     <li class="log-item">
       <div class="log-icon">
         <img src="{{ post.icon }}" alt="{{ post.title }}">
@@ -31,5 +33,6 @@ keywords: "车机软件,车载应用,车机直播,车载娱乐软件,车机视�
       </div>
       <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
     </li>
+    {% endif %}
   {% endfor %}
 </ul>

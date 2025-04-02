@@ -9,7 +9,9 @@ keywords: "电视软件,电视直播软件,电视盒子软件,智能电视应用
   <div class="section-title">
     <h2>电视软件</h2>
   </div>
-  {% for post in site.categories.tv %}
+  {% assign sorted_posts = site.posts | sort: 'last_modified_at' | reverse %}
+   {% for post in sorted_posts %}
+   {% if post.categories contains 'tv' %}
     <li class="log-item">
       <div class="log-icon">
         <img src="{{ post.icon }}" alt="{{ post.title }}">
@@ -29,7 +31,8 @@ keywords: "电视软件,电视直播软件,电视盒子软件,智能电视应用
           &nbsp;&nbsp;点击下载</a>
         </div>
       </div>
-      <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <span class="date">{{ post.last_modified_at | date: "%Y-%m-%d" }}</span>
     </li>
+   {% endif %}
   {% endfor %}
 </ul>

@@ -8,7 +8,9 @@ keywords: "聚合直播更新,HuYa更新日志,版本更新记录,功能更新,�
   <div class="section-title">
     <h2>更新列表</h2>
   </div>
-  {% for post in site.categories.thread %}
+  {% assign sorted_posts = site.posts | sort: 'last_modified_at' | reverse %}
+   {% for post in sorted_posts %}
+   {% if post.categories contains 'thread' %}
     <li class="log-item">
       <div class="log-icon">
         <img src="{{ post.icon }}"  width="120" height="120" alt="{{ post.title }}" loading="lazy">
@@ -30,5 +32,6 @@ keywords: "聚合直播更新,HuYa更新日志,版本更新记录,功能更新,�
       </div>
       <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
     </li>
+    {% endif %}
   {% endfor %}
 </ul>

@@ -17,6 +17,7 @@ update-content: |
     7. 歌词显示更清晰，支持横竖屏切换
     8. 支持蓝牙设备快速连接和控制
 date:   2025-04-01 08:00:49 +0800
+last_modified_at: 2025-04-01 08:00:49 +0800
 categories: car
 lanzou_download: "https://jayjd.lanzouu.com/b0017d5z8b"
 lanzou_pwd: "f8ps"

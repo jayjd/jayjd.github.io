@@ -14,6 +14,7 @@ update-content: |
     4. 地图深度整合：配合高德地图悬浮版，实现无缝导航体验
     5. 便捷操作设计：支持快速切换和操作，驾驶时更安全高效
 date:   2025-04-01 08:00:49 +0800
+last_modified_at: 2025-04-01 08:00:49 +0800
 categories: car
 lanzou_download: "https://jayjd.lanzouu.com/b0017d5y8f"
 lanzou_pwd: "70ez"

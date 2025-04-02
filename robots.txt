@@ -27,7 +27,7 @@ Disallow: /*.xml$
 Disallow: /*.txt$
 
 # 站点地图
-Sitemap: https://jayjd.github.io/sitemap.xml
+Sitemap: /sitemap.xml
 
 # 爬虫抓取延迟（每次请求间隔）
 Crawl-delay: 1

@@ -9,7 +9,6 @@ update-content: "<p>近期更新</p>
             <p>1. 修复 B 站直播崩溃问题</p>
             <p>2. 修复 抖音直播清晰度选择问题</p>"
 date:   2024-03-01 08:53:49 +0800
-static-date: 2024-03-01 08:53:49 +0800
 categories: thread
 lanzou_download: ""
 lanzou_pwd: ""

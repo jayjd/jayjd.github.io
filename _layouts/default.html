@@ -16,6 +16,9 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/assets/js/click-effect.js"></script>
 
+  <!-- 站点统计 -->
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
   <script>
     var _hmt = _hmt || [];
     (function () {
@@ -170,6 +173,11 @@
       </div>
     </div>
     <div class="footer-bottom">
+      <!-- 访问统计 -->
+      <span id="busuanzi_container_site_pv">
+        本站总访问量
+        <span id="busuanzi_value_site_pv"></span>次
+      </span>
       <p>&copy; {{ 'now' | date: "%Y" }} 聚合直播. All rights reserved.</p>
     </div>
   </footer>

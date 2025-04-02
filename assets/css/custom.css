@@ -194,7 +194,25 @@ nav ul li a:active {
     border-radius: 10px;
     box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
+.info-title{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.info-title h1 {
+    margin: 0;
+    font-size: 28px;
+    color: var(--title-color);
+    padding-bottom: 20px;
+}
+#busuanzi_container_page_pv {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+}
 .info-row {
     display: flex;
     align-items: center;

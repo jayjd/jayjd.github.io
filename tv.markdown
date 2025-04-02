@@ -29,7 +29,7 @@ keywords: "电视软件,电视直播软件,电视盒子软件,智能电视应用
           &nbsp;&nbsp;点击下载</a>
         </div>
       </div>
-      <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <span class="date">{{ post.update-date | date: "%Y-%m-%d" }}</span>
     </li>
   {% endfor %}
 </ul>

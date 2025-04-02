@@ -10,6 +10,7 @@ md5: ACEBA437F5F2698EC606A910DECCE263
 update-content: |
     修复1.10.3, 1.10.4, 1.10.6版本在一些设备上出现闪退的问题。
 date:   2025-03-30 08:01:49 +0800
+update-date:   2025-03-30 08:01:49 +0800
 categories: tv
 lanzou_download: "https://jayjd.lanzouu.com/b0017d634b"
 lanzou_pwd: "hnu4"

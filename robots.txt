@@ -19,6 +19,7 @@ Disallow: /404.html
 Disallow: /push.markdown
 Disallow: /manifest.json
 Disallow: /hy/
+Disallow: /robots.txt
 
 # 禁止所有爬虫爬取特定文件类型
 Disallow: /*.json$

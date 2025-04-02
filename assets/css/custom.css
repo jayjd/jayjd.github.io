@@ -648,14 +648,14 @@ td {
 .disclaimer td img {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: all 0.3s ease;  /* 修改过渡属性和时间 */
     transform-origin: center;   /* 设置变换的原点为中心 */
     cursor: zoom-in;           /* 添加放大镜光标 */
 }
 
 .disclaimer td img:hover {
-    transform: scale(2);
+    transform: scale(1.2);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* 添加悬浮阴影 */
     z-index: 100;  /* 确保放大后的图片显示在最上层 */
 }

@@ -5,7 +5,7 @@ layout: null
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- 首页 -->
     <url>
-        <loc>https://jayjd.github.io/</loc>
+        <loc>https://jayjd.github.io</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -27,7 +27,7 @@ layout: null
         <priority>0.8</priority>
     </url>
 
-    <!-- 评论区页面 -->
+    <!-- 更新页面 -->
     <url>
         <loc>https://jayjd.github.io/update</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>

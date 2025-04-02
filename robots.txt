@@ -1,9 +1,10 @@
 User-agent: *
 Allow: /
-Allow: /tv
-Allow: /car
-Allow: /thread
-Allow: /message
+Allow: /tv/
+Allow: /car/
+Allow: /huya/
+Allow: /message/
+Allow: /thread/
 Allow: /assets/appicon/
 Allow: /assets/img/
 Allow: /assets/icon/
@@ -15,6 +16,9 @@ Disallow: /_includes/
 Disallow: /_data/
 Disallow: /_config.yml
 Disallow: /404.html
+Disallow: /push.markdown
+Disallow: /manifest.json
+Disallow: /hy/
 
 # 禁止所有爬虫爬取特定文件类型
 Disallow: /*.json$

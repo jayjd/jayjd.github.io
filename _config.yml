@@ -49,6 +49,9 @@ gitee-svg: "<svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w
 
 # Build settings
 theme: minima
+# 确保 _redirects 文件被复制到构建目录
+include:
+  - _redirects
 # plugins:
 #   - jekyll-feed
 # remote_theme: "mmistakes/minimal-mistakes"

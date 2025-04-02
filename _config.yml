@@ -27,13 +27,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jayjd.github.io"  # 你的 GitHub Pages 网址
 plugins:
   - jekyll-sitemap # the base hostname & protocol for your site, e.g. http://example.com
-# iOS 刘海屏适配
-ios-viewport-settings: >-
-  viewport-fit=cover, 
-  initial-scale=1.0, 
-  minimum-scale=1.0, 
-  maximum-scale=1.0, 
-  user-scalable=no
 # 谷歌广告
 google-adsense-account: ca-pub-9311012147988614
 

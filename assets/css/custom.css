@@ -144,6 +144,37 @@ nav ul li a:active {
     /* 快速过渡 */
 }
 
+#topButton {
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--bg-color);
+    background-size: 300% 100%;
+    color: rgba(255, 255, 255, 0.527);
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--border-color);
+    animation: gradientScroll 8s ease infinite;
+    align-items: center;     /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+}
+#topButton:hover {
+    box-shadow: 0 6px 20px var(--border-color);
+    background-color: var(--primary-color);
+    background-size: 400% 100%;
+}
+
+#topButton:active {
+    transform: translateY(0) scale(0.95);
+}
+
 /* 日志列表样式，添加特定类名 .log-list */
 .log-list {
     list-style-type: none;
@@ -193,7 +224,8 @@ nav ul li a:active {
     border-radius: 10px;
     box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
 }
-.info-title{
+
+.info-title {
     border: 1px solid #ccc;
     padding: 20px;
     margin-top: 20px;
@@ -201,17 +233,20 @@ nav ul li a:active {
     border-radius: 10px;
     box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .info-title h1 {
     margin: 0;
     font-size: 28px;
     color: var(--title-color);
     padding-bottom: 20px;
 }
+
 #busuanzi_container_page_pv {
     display: inline-flex !important;
     align-items: center;
     gap: 8px;
 }
+
 .info-row {
     display: flex;
     align-items: center;
@@ -242,10 +277,14 @@ nav ul li a:active {
     margin-right: 50px;
     /*圆角  */
     border-radius: 20px;
-    transition: all 0.3s ease;  /* 修改过渡属性和时间 */
-    transform-origin: center;   /* 设置变换的原点为中心 */
-    cursor: zoom-in;           /* 添加放大镜光标 */
+    transition: all 0.3s ease;
+    /* 修改过渡属性和时间 */
+    transform-origin: center;
+    /* 设置变换的原点为中心 */
+    cursor: zoom-in;
+    /* 添加放大镜光标 */
 }
+
 .info-row img:hover {
     transform: scale(1.03);
 }
@@ -328,9 +367,11 @@ nav ul li a:active {
     transition: transform 0.3s ease;
     transform-origin: center;
 }
+
 .log-icon:hover {
     transform: scale(1.2) rotate(360deg);
 }
+
 .log-content {
     flex-grow: 1;
 }
@@ -404,6 +445,15 @@ nav ul li a:active {
 
 /* 手机端样式 */
 @media screen and (max-width: 600px) {
+    #topButton {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
     .info-row-posts {
         display: flex;
         align-items: center;
@@ -648,15 +698,20 @@ td {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    transition: all 0.3s ease;  /* 修改过渡属性和时间 */
-    transform-origin: center;   /* 设置变换的原点为中心 */
-    cursor: zoom-in;           /* 添加放大镜光标 */
+    transition: all 0.3s ease;
+    /* 修改过渡属性和时间 */
+    transform-origin: center;
+    /* 设置变换的原点为中心 */
+    cursor: zoom-in;
+    /* 添加放大镜光标 */
 }
 
 .disclaimer td img:hover {
     transform: scale(1.2);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* 添加悬浮阴影 */
-    z-index: 100;  /* 确保放大后的图片显示在最上层 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    /* 添加悬浮阴影 */
+    z-index: 100;
+    /* 确保放大后的图片显示在最上层 */
 }
 
 .overtime {
@@ -688,17 +743,20 @@ td {
 }
 
 .home_icon {
-    margin:60px 0px;
+    margin: 60px 0px;
     border-radius: 50%;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
+
 .home_icon:hover {
     transform: scale(1.2);
 }
-.home_buttons{
+
+.home_buttons {
     margin: 20px 0;
 }
+
 .disclaimer_banner h2 {
     font-size: 2.0rem;
     margin: 0;
@@ -710,8 +768,10 @@ td {
 .disclaimer_banner h2:hover {
     color: #00b318;
     transform: scale(1.1);
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* 增强悬停时的阴影效果 */
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* 增强悬停时的阴影效果 */
 }
+
 /* 点击效果 爱国 */
 .click-word {
     position: absolute;
@@ -732,10 +792,12 @@ td {
         opacity: 1;
         transform: translateY(0) scale(1) rotate(0deg);
     }
+
     50% {
         opacity: 0.8;
         transform: translateY(-20px) scale(1.2) rotate(5deg);
     }
+
     100% {
         opacity: 0;
         transform: translateY(-40px) scale(0.8) rotate(-5deg);
@@ -773,19 +835,23 @@ td {
         opacity: 0;
         transform: translate(-50%, -40%);
     }
+
     15% {
         opacity: 1;
         transform: translate(-50%, -50%);
     }
+
     85% {
         opacity: 1;
         transform: translate(-50%, -50%);
     }
+
     100% {
         opacity: 0;
         transform: translate(-50%, -60%);
     }
 }
+
 /* 顶部样式 */
 .disclaimer_banner {
     background: linear-gradient(135deg,

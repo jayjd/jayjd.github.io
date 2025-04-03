@@ -23,7 +23,8 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <!-- ico图标 -->
   <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon">
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
   <meta name="google-adsense-account" content="{{ site.google-adsense-account }}">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
@@ -115,6 +116,37 @@
       }
     });
   </script>
+  <script>
+     document.addEventListener('DOMContentLoaded', function () {
+      const topButton = document.getElementById("topButton");
+      let lastScrollTop = 0;
+      
+      // 初始状态隐藏按钮
+      topButton.style.display = "none";
+
+      // 返回顶部按钮功能
+      window.onscroll = function () {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        const windowHeight = window.innerHeight;
+        
+        // 只在滚动超过一屏高度的 20% 时显示按钮
+        if (currentScroll > windowHeight * 0.2) {
+          topButton.style.display = "flex";
+        } else {
+          topButton.style.display = "none";
+        }
+
+        lastScrollTop = currentScroll;
+      };
+
+      topButton.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
   <style>
     .menu-toggle span {
       transition: all 0.3s ease;
@@ -155,14 +187,14 @@
   <div class="markdown-body-container">
     {{ content }}
     {% if page.url contains "/message" or page.url contains "/thread/" or page.url contains "/tv/" %}
-      <div class="info-section">
-        {% if page.url contains "/message" %}
-         <h2>🌟 {{page.title}} 🌟 </h2>
-        {% else %}
-         <h2>🌟 {{page.title}} 🌟 评论区</h2>
-        {% endif %}
-        {% include gitalk.html %}
-      </div>
+    <div class="info-section">
+      {% if page.url contains "/message" %}
+      <h2>🌟 {{page.title}} 🌟 </h2>
+      {% else %}
+      <h2>🌟 {{page.title}} 🌟 评论区</h2>
+      {% endif %}
+      {% include gitalk.html %}
+    </div>
     {% endif %}
   </div>
   <!-- 网站底部 -->
@@ -193,6 +225,14 @@
       <p>&copy; {{ 'now' | date: "%Y" }} 聚合直播. All rights reserved.</p>
     </div>
   </footer>
+  <button id="topButton" title="返回顶部">
+    <svg t="1743640068319" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+      p-id="5184" width="24" height="24">
+      <path
+        d="M919.194 500.382l-395.16-388.45c-6.649-6.536-17.419-6.536-24.068 0l-395.16 388.45a16.524 16.524 0 0 0 0 23.659c3.324 3.268 7.679 4.902 12.034 4.902s8.71-1.634 12.034-4.902l370.151-363.866v740.062c0 9.24 7.621 16.731 17.02 16.731s17.02-7.492 17.02-16.731V168.13l362.06 355.911c3.324 3.268 7.679 4.902 12.034 4.902s8.71-1.634 12.034-4.902a16.523 16.523 0 0 0 0.001-23.659z"
+        fill="var(--text-color)" p-id="5185"></path>
+    </svg>
+  </button>
 </body>
 
 

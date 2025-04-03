@@ -948,7 +948,25 @@ hr {
     --gradient-mid2: #FFC107;
     --gradient-end: #FF5252;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
 
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #1a1a1a;
@@ -969,7 +987,17 @@ hr {
         --gradient-end: #cc3d3d;
         /* 更深的红色 */
     }
-
+    ::-webkit-scrollbar-track {
+        background: var(--card-bg);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary-color);
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--primary-color);
+    }
     .log-icon img {
         filter: brightness(0.8);
     }

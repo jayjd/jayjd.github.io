@@ -1,8 +1,9 @@
+# 允许所有爬虫
 User-agent: *
 Allow: /
 
-# allow google
-User-agent: *
+# Google 爬虫特定设置
+User-agent: Googlebot
 Allow: /
 Allow: /tv/
 Allow: /car/

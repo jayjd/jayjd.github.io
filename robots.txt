@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
+
+# allow google
+User-agent: *
+Allow: /
 Allow: /tv/
 Allow: /car/
 Allow: /huya/

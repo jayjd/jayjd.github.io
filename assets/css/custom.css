@@ -211,10 +211,14 @@ nav ul li a:active {
 }
 
 .log-list li span {
-    color: #777;
+    color: var(--text-color);
     margin-left: 10px;
     white-space: nowrap;
     /* 防止日期换行 */
+}
+.log-list li span[style*="color: #ff4757"] {
+    font-weight: bold;
+    text-shadow: 0 0 1px rgba(255, 71, 87, 0.3);
 }
 
 .info-section {

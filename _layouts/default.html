@@ -195,15 +195,15 @@
   <!-- 输出 Markdown 文件渲染后的内容 -->
   <div class="markdown-body-container">
     {{ content }}
-    {% if page.url contains "/message" or page.url contains "/thread/" or page.url contains "/tv/" %}
-    <div class="info-section">
-      {% if page.url contains "/message" %}
-      <h2>🌟 {{page.title}} 🌟 </h2>
-      {% else %}
-      <h2>🌟 {{page.title}} 🌟 评论区</h2>
-      {% endif %}
-      {% include gitalk.html %}
-    </div>
+    {% if page.url contains "/message" or page.url contains "/thread/" or page.url contains "/tv/" or page.url contains "/car/" %}
+      <div class="info-section">
+        {% if page.url contains "/message" %}
+          <h2>🌟 {{page.title}} 🌟 </h2>
+        {% else %}
+          <h2>🌟 {{page.title}} 🌟 评论区</h2>
+        {% endif %}
+        {% include gitalk.html %}
+      </div>
     {% endif %}
   </div>
   <!-- 网站底部 -->

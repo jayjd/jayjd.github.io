@@ -4,7 +4,7 @@ layout: default
 <div class="disclaimer_banner">
   <div> 
     <img src="assets\img\ic_channel.png" alt="聚合直播" loading="lazy" width="150" height="150" class="home_icon">
-    <h2>聚合直播(HuYa)</h2>
+    <h2>聚合直播(FUSE|HuYa)</h2>
   </div>
 
   <div class="home_buttons">
@@ -26,7 +26,7 @@ layout: default
 
 
 <div class="disclaimer">
-  <p>一个聚合直播TV客户端，仅供学习与交流使用。该应用仅作为个人兴趣开发，应用没有任何破解行为，所有的内容均来源于网页端，本人不对内容负责。本人不会收集你的个人信息。</p>
+  <p>FUSE:一个聚合直播TV客户端，仅供学习与交流使用。该应用仅作为个人兴趣开发，应用没有任何破解行为，所有的内容均来源于网页端，本人不对内容负责。本人不会收集你的个人信息。</p>
   <p>软件仅供交流学习，请于下载后的 24 小时内卸载！</p>
   <p>如果本项目存在侵犯您的合法权益的情况，请及时与开发者联系，开发者将会及时删除有关内容。</p>
 </div>
@@ -124,6 +124,24 @@ layout: default
   </a>
 </div></div>
 
+### 2.2版本截图
+
+<div class="disclaimer">
+<table>
+    <tr>
+        <td><img src="https://img.picui.cn/free/2025/04/15/67fdfd436c804.png" alt="Screenshot_20240125_090207" loading="lazy"></td>
+        <td><img src="https://img.picui.cn/free/2025/04/15/67fdfd4123ffd.png" alt="Screenshot_20240125_090330" loading="lazy"></td>
+    </tr>
+    <tr>
+        <td><img src="https://img.picui.cn/free/2025/04/15/67fdfd40f31b8.png" alt="Screenshot_20240125_090316" loading="lazy"></td>
+        <td><img src="https://img.picui.cn/free/2025/04/15/67fdfd4100be9.png" alt="Screenshot_20240125_090305" loading="lazy"></td>
+    </tr>
+    <tr>
+        <td><img src="https://img.picui.cn/free/2025/04/15/67fdfd4124231.png" alt="Screenshot_20240125_090256" loading="lazy"></td>
+        <td><img src="https://img.picui.cn/free/2025/04/15/67fdfd410cf6d.png" alt="Screenshot_20240125_090246" loading="lazy"></td>
+    </tr>
+</table>
+</div>
 ### 2.0版本截图
 
 <div class="disclaimer">

@@ -1,6 +1,6 @@
 {
-    "name": "聚合直播",
-    "short_name": "聚合直播",
+    "name": "FUSE",
+    "short_name": "FUSE",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",

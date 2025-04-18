@@ -1,7 +1,7 @@
 {
-  "versionName": "2.1.24",
-  "download": "https://gitee.com/jayjd/hyy/releases/download/2.1.24/HuYa-2.1.24-20250402.apk",
-  "versionCode": 21240,
+  "versionName": "2.1.25",
+  "download": "https://gitee.com/jayjd/hyy/releases/download/2.1.25/HuYa-2.1.25-20250418.apk",
+  "versionCode": 21250,
   "admiration": "MoCh3v8XTJiEOQhSYo3WLj05JEJWwnndwwcf8FX747Q/dfH6oAaUT7FeWihCTpDwe4EE6fv8zSu7aiieFIbuQjE6fLd2Fky+QI/ou2oaM+ctpt/1+h1JXqWmEyetvlg81/9YnrPBIx4MCAwODwIG2v0xEm+Rn4PNmHcJrYuBQ0gwPCVg/QJ4fNsDGxx4L6ivxPTc10jbBJEi+THdaxaP/lc6XsK0GP2+yEWIhtAdJ++VVQA28D373H7RUjnhq2TzaC3Z69aUkRcMeG9W7ZiDMYorin6uNn9Kn6tr7UcccGn01aTHIs7O44n5GyIyaD/I4/j0BpoOpkTVctSaikIO6L3tqLx3pIaQawNTeuussYikVz2s58WON4TiJOmN/ArTUzpQW20onnLL7S+GRUcm6s4IuncfNEZyEIg95Qot0wreelNrbww64tKrlHYx74havPNoztQ8JxPjXduljRycb5zbmS7nAUt5Hz8zf/FiYwj1YZh5xeS6tLm3wOtxfeMeJRMgkLJvoy0h4BtvnqrFlCl1f5T4t74JGUdPktGyueufjAyhTPFJl4gzM/ImmTxe5m6FKM0TfszUS0hAm6tsJcvtL4ZFRybqzgi6dx80RnIQiD3lCi3TCojFZvoltQcc",
   "entity": "c4BdJ+OTVMWUcOw2+oDd7aN6N0NdAVohfZwnPILzzvBIlaATHy+h4kaGzBYWQC+HoyfWhv+IK22e8DYZMKeSD5It+YRzzMxe1WNA1c3HjTRGhswWFkAvhwGbFxRevfDJoFA8lNOfTHZ51IBxd312dPGBAQi/hlU9sWk7Ci7CJWxsUUKXrmmbsfhwsYT75OeZB6/TM3Wy67uI+4TOHh4eur5/pz2PpBAw9WGYecXkurRhAXjjtwUflbyLSS0838mFRro3s2e+Yj0c+Wq1wXzsHsvzMxSANTOHzS5xD+olD0TXTH7SKIT1swlXuC7FJZuY0DoGB4nufMnB4xzroxabYKt2618bj8P/NcoGhpZnRMuFiXcCKjJbDuje7uVAUFYaN/HZxUq2YEwGQw/iek8iCEDNjUycC0bQ+dRvDpwNv7TsFK/H4kCPp42WU/fsbzGf",
   "type": "2Kg0apEWeo2oU+WitzoYOPVhmHnF5Lq0lwnGLWbaBw8jsCDCEAP+qA==",
@@ -10,6 +10,6 @@
   "appreciate": 1,
   "hyParams": "",
   "festival": "https://gitee.com/jayjd/hyt/releases/download/2.1.0/51.png",
-  "info": "HuYa 2.1.24 更新日志\n1. 修复 B 站直播列表无法获取的问题\n2. 增加 B站和虎牙Cookie的添加（在直播推送里微信扫码）\n3. 重构 直播推送界面\n4. 修复 虎牙断播问题\nPs: 临时解决B站获取直播列表的问题 不完美版本，后续会修复\n近期更新\n1.增加 DLNA投屏\n2.修复 虎牙弹幕功能\nPs:如遇到安装失败的情况,请卸载当前的版本到系统的Download目录下找到安装包自行安装",
+  "info": "HuYa 2.1.25 更新日志\n1.修复 增加全局异常捕获\n2.修复 网易CC部分直播间无法播放的问题\n3.修复 网易CC端游 手游 其他的分类无法切换的问题\n4.修复 网易CC进入直播间闪退的问题\nPs:强烈建议所有安卓4.4设备升级到最新版本，这个版本将是最终的养老版本，不会更随后续的版本进行升级，感谢大家的支持。\n--2.2.x 全新版本开发中…………\nPs:如遇到安装失败的情况,请卸载当前的版本到系统的Download目录下找到安装包自行安装",
   "isVersion": true
 }

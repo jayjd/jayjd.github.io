@@ -9,7 +9,7 @@ layout: default
 
   <div class="home_buttons">
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://img.shields.io/badge/%204.4+-orange.svg?color=orange&logoColor=orange&label=支持版本&logo=Android" alt="支持安卓版本" loading="lazy">
+      <img src="https://img.shields.io/badge/%205.0+-orange.svg?color=orange&logoColor=orange&label=支持版本&logo=Android" alt="支持安卓版本" loading="lazy">
     </a>
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
       <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=发行版本&logo=DocuSign" alt="Releases" loading="lazy">

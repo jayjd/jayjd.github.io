@@ -1,7 +1,7 @@
 {
-  "versionName": "2.1.25",
+  "versionName": "3.0.0",
   "download": "https://gitee.com/jayjd/hyy/releases/download/2.1.25/HuYa-2.1.25-20250418.apk",
-  "versionCode": 21250,
+  "versionCode": 30000,
   "admiration": "MoCh3v8XTJiEOQhSYo3WLj05JEJWwnndwwcf8FX747Q/dfH6oAaUT7FeWihCTpDwe4EE6fv8zSu7aiieFIbuQjE6fLd2Fky+QI/ou2oaM+ctpt/1+h1JXqWmEyetvlg81/9YnrPBIx4MCAwODwIG2v0xEm+Rn4PNmHcJrYuBQ0gwPCVg/QJ4fNsDGxx4L6ivxPTc10jbBJEi+THdaxaP/lc6XsK0GP2+yEWIhtAdJ++VVQA28D373H7RUjnhq2TzaC3Z69aUkRcMeG9W7ZiDMYorin6uNn9Kn6tr7UcccGn01aTHIs7O44n5GyIyaD/I4/j0BpoOpkTVctSaikIO6L3tqLx3pIaQawNTeuussYikVz2s58WON4TiJOmN/ArTUzpQW20onnLL7S+GRUcm6s4IuncfNEZyEIg95Qot0wreelNrbww64tKrlHYx74havPNoztQ8JxPjXduljRycb5zbmS7nAUt5Hz8zf/FiYwj1YZh5xeS6tLm3wOtxfeMeJRMgkLJvoy0h4BtvnqrFlCl1f5T4t74JGUdPktGyueufjAyhTPFJl4gzM/ImmTxe5m6FKM0TfszUS0hAm6tsJcvtL4ZFRybqzgi6dx80RnIQiD3lCi3TCojFZvoltQcc",
   "entity": "c4BdJ+OTVMWUcOw2+oDd7aN6N0NdAVohfZwnPILzzvBIlaATHy+h4kaGzBYWQC+HoyfWhv+IK22e8DYZMKeSD5It+YRzzMxe1WNA1c3HjTRGhswWFkAvhwGbFxRevfDJoFA8lNOfTHZ51IBxd312dPGBAQi/hlU9sWk7Ci7CJWxsUUKXrmmbsfhwsYT75OeZB6/TM3Wy67uI+4TOHh4eur5/pz2PpBAw9WGYecXkurRhAXjjtwUflbyLSS0838mFRro3s2e+Yj0c+Wq1wXzsHsvzMxSANTOHzS5xD+olD0TXTH7SKIT1swlXuC7FJZuY0DoGB4nufMnB4xzroxabYKt2618bj8P/NcoGhpZnRMuFiXcCKjJbDuje7uVAUFYaN/HZxUq2YEwGQw/iek8iCEDNjUycC0bQ+dRvDpwNv7TsFK/H4kCPp42WU/fsbzGf",
   "type": "2Kg0apEWeo2oU+WitzoYOPVhmHnF5Lq0lwnGLWbaBw8jsCDCEAP+qA==",
@@ -10,6 +10,6 @@
   "appreciate": 0,
   "hyParams": "",
   "festival": "https://gitee.com/jayjd/hyt/releases/download/2.1.0/51.png",
-  "info": "HuYa 2.1.25 更新日志\n1.修复 增加全局异常捕获\n2.修复 网易CC部分直播间无法播放的问题\n3.修复 网易CC端游 手游 其他的分类无法切换的问题\n4.修复 网易CC进入直播间闪退的问题\nPs:强烈建议所有安卓4.4设备升级到最新版本，这个版本将是最终的养老版本，不会更随后续的版本进行升级，感谢大家的支持。\n--2.2.x 全新版本开发中…………\nPs:如遇到安装失败的情况,请卸载当前的版本到系统的Download目录下找到安装包自行安装",
+  "info": "FUSE 3.0.0 正式版 更新内容： 1.更改应用名 HuYa -> FUSE\n2.更改应用图标\n3.应用支持64位（支持全架构CPU） \n4.升级最新的播放器版本\n5.重构整体的界面\n6.6款主题随心选择\n7.增加若干功能\n8.修复若干BUG\nPs: 安卓4.4 的朋友不要着急，后续有修复版本\n在这里提前祝大家51劳动节快乐，感谢大家的支持！",
   "isVersion": true
 }

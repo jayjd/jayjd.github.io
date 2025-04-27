@@ -124,7 +124,7 @@ layout: default
   </a>
 </div></div>
 
-### 2.2版本截图
+### FUSE 3.0版本截图
 
 <div class="disclaimer">
 <table>

@@ -108,6 +108,15 @@ layout: default
     <td>✅</td>
     <td>❌</td>
   </tr>
+  <tr>
+    <td>Twitch</td>
+    <td>✅</td>
+    <td>❌</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>✅</td>
+    <td>❌</td>
+  </tr>
 </table>
 </div>
 ### QQ频道&交流

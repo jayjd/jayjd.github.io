@@ -109,7 +109,7 @@ layout: default
     <td>❌</td>
   </tr>
   <tr>
-    <td>Twitch</td>
+    <td>Twitch（测试）</td>
     <td>✅</td>
     <td>❌</td>
     <td>✅</td>

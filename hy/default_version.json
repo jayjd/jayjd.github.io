@@ -1,7 +1,7 @@
 {
-  "versionName": "3.0.1",
-  "download": "https://gitee.com/jayjd/hyy/releases/download/3.0.1/FUSE-3.0.1-20250428.apk",
-  "versionCode": 30010,
+  "versionName": "3.0.2",
+  "download": "https://gitee.com/jayjd/hyy/releases/download/3.0.2/FUSE-3.0.2-20250511.apk",
+  "versionCode": 30020,
   "admiration": "MoCh3v8XTJiEOQhSYo3WLj05JEJWwnndwwcf8FX747Q/dfH6oAaUT7FeWihCTpDwe4EE6fv8zSu7aiieFIbuQjE6fLd2Fky+QI/ou2oaM+ctpt/1+h1JXqWmEyetvlg81/9YnrPBIx4MCAwODwIG2v0xEm+Rn4PNmHcJrYuBQ0gwPCVg/QJ4fNsDGxx4L6ivxPTc10jbBJEi+THdaxaP/lc6XsK0GP2+yEWIhtAdJ++VVQA28D373H7RUjnhq2TzaC3Z69aUkRcMeG9W7ZiDMYorin6uNn9Kn6tr7UcccGn01aTHIs7O44n5GyIyaD/I4/j0BpoOpkTVctSaikIO6L3tqLx3pIaQawNTeuussYikVz2s58WON4TiJOmN/ArTUzpQW20onnLL7S+GRUcm6s4IuncfNEZyEIg95Qot0wreelNrbww64tKrlHYx74havPNoztQ8JxPjXduljRycb5zbmS7nAUt5Hz8zf/FiYwj1YZh5xeS6tLm3wOtxfeMeJRMgkLJvoy0h4BtvnqrFlCl1f5T4t74JGUdPktGyueufjAyhTPFJl4gzM/ImmTxe5m6FKM0TfszUS0hAm6tsJcvtL4ZFRybqzgi6dx80RnIQiD3lCi3TCojFZvoltQcc",
   "entity": "c4BdJ+OTVMWUcOw2+oDd7aN6N0NdAVohfZwnPILzzvBIlaATHy+h4kaGzBYWQC+HoyfWhv+IK22e8DYZMKeSD5It+YRzzMxe1WNA1c3HjTRGhswWFkAvhwGbFxRevfDJoFA8lNOfTHZ51IBxd312dPGBAQi/hlU9sWk7Ci7CJWxsUUKXrmmbsfhwsYT75OeZB6/TM3Wy67uI+4TOHh4eur5/pz2PpBAw9WGYecXkurRhAXjjtwUflbyLSS0838mFRro3s2e+Yj0c+Wq1wXzsHsvzMxSANTOHzS5xD+olD0TXTH7SKIT1swlXuC7FJZuY0DoGB4nufMnB4xzroxabYKt2618bj8P/NcoGhpZnRMuFiXcCKjJbDuje7uVAUFYaN/HZxUq2YEwGQw/iek8iCEDNjUycC0bQ+dRvDpwNv7TsFK/H4kCPp42WU/fsbzGf",
   "type": "2Kg0apEWeo2oU+WitzoYOPVhmHnF5Lq0lwnGLWbaBw8jsCDCEAP+qA==",
@@ -10,6 +10,6 @@
   "appreciate": 0,
   "hyParams": "",
   "festival": "https://gitee.com/jayjd/hyt/releases/download/2.1.0/51.png",
-  "info": "FUSE 3.0.1 正式版 更新日志\n1.修复 哔哩哔哩未登录无法退出\n2.增加 webview低版本提示\n3.修复 虎牙断流问题\n近期更新内容：\n 1.更改应用名 HuYa -> FUSE\n2.更改应用图标\n3.应用支持64位（支持全架构CPU） \n4.升级最新的播放器版本\n5.重构整体的界面\n6.6款主题随心选择\n7.增加若干功能\n8.修复若干BUG\nPs: 安卓4.4 的朋友不要着急，后续有修复版本\n在这里提前祝大家51劳动节快乐，感谢大家的支持！",
+  "info": "3.0.2 正式版 更新日志\n1.修复 部分设备启动到异常界面的问题\n2.增加 设备画质的兼容性，可选择智能模式，流畅优先，画面优先\n3.修复 虎牙部分直播间闪退的问题\n4.修复 切换平台闪退的问题\n5.收藏 删除异常\n6.哔哩哔哩 部分直播间闪退\n7.修复 安卓7.0一下 收藏夹 切换无法过滤问题\n8.直播推送 支持Twitch（\uD83E\uDE9C）\n9.增加 twitch清晰度的选择\n10.修复已知问题\n近期更新内容：\n 1.更改应用名 HuYa -> FUSE\n2.更改应用图标\n3.应用支持64位（支持全架构CPU） \n4.升级最新的播放器版本\n5.重构整体的界面\n6.6款主题随心选择\n7.增加若干功能\n8.修复若干BUG\nPs: 安卓4.4 的朋友不要着急，后续有修复版本\n在这里提前祝大家51劳动节快乐，感谢大家的支持！",
   "isVersion": true
 }

@@ -1,20 +1,5 @@
-# 允许所有爬虫
 User-agent: *
 Allow: /
-
-# Google 爬虫特定设置
-User-agent: Mediapartners-Google
-Disallow: /
-Allow: /
-Allow: /tv/
-Allow: /car/
-Allow: /huya/
-Allow: /message/
-Allow: /thread/
-Allow: /assets/appicon/
-Allow: /assets/img/
-Allow: /assets/icon/
-
 Disallow: /assets/css/
 Disallow: /assets/js/
 Disallow: /_layouts/
@@ -26,11 +11,19 @@ Disallow: /push.markdown
 Disallow: /manifest.json
 Disallow: /hy/
 Disallow: /robots.txt
-
-# 禁止所有爬虫爬取特定文件类型
 Disallow: /*.json$
 Disallow: /*.xml$
 Disallow: /*.txt$
 
-# 站点地图
+User-agent: Mediapartners-Google
+Allow: /tv/
+Allow: /car/
+Allow: /huya/
+Allow: /message/
+Allow: /thread/
+Allow: /assets/appicon/
+Allow: /assets/img/
+Allow: /assets/icon/
+Disallow: /  # 禁止其他所有路径
+
 Sitemap: https://jayjd.github.io/sitemap.xml

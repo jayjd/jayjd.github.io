@@ -4,6 +4,7 @@ Allow: /
 
 # Google 爬虫特定设置
 User-agent: Mediapartners-Google
+Disallow: /
 Allow: /
 Allow: /tv/
 Allow: /car/

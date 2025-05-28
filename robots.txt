@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Google 爬虫特定设置
-User-agent: Googlebot
+User-agent: Mediapartners-Google
 Allow: /
 Allow: /tv/
 Allow: /car/

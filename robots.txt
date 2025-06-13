@@ -24,6 +24,10 @@ Allow: /thread/
 Allow: /assets/appicon/
 Allow: /assets/img/
 Allow: /assets/icon/
-Disallow: /  # 禁止其他所有路径
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /_layouts/
+Disallow: /_includes/
+Disallow: /_data/
 
 Sitemap: https://jayjd.github.io/sitemap.xml

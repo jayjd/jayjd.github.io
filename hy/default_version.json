@@ -9,6 +9,7 @@
   "XLive_Message": "未开播",
   "appreciate": 0,
   "hyParams": "",
+  "appGuard": "ezczxzlZ1CIju/fUyAnNUF3S6kLafcw2vbcAszmQouJ+oXyADcCyXA==",
   "festival": "https://gitee.com/jayjd/hyt/releases/download/2.1.0/51.png",
   "info": "3.0.4 正式版 更新日志\n1.优化 列表数据整合\n2.修复 部分设备无法启动的问题\n3.修复 新版虎牙无法直播推送\n4.优化 哔哩直播列表出现的异常\n5.修复 哔哩弹幕问题\n6.修复 抖音列表问题\n7.增加 支持第三方播放器观看直播（可能部分平台不支持）\n近期更新内容：\n1.修复 低运存设备加载图片出现奔溃问题\n2.修复 启动出现白屏的问题\n3.修复 虎牙直播可能出现的奔溃问题\n4.修复 哔哩哔哩 无法播放的问题\n5.增加 设置DLNA开启、关闭（默认关闭）\n6.适配 手机版可设置直播、cookie、直播源的推送\n7.修复 哔哩获取分区失败的问题\n8.增加 菜单键首页呼出平台选择、播放页呼出设置",
   "isVersion": true

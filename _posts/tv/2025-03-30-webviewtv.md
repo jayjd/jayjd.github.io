@@ -15,8 +15,8 @@ update-content: |
 date:   2025-03-30 08:01:49 +0800
 last_modified_at: 2025-05-25 08:01:49 +0800
 categories: tv
-lanzou_download: "https://jayjd.lanzouu.com/b0017d634b"
-lanzou_pwd: "hnu4"
+lanzou_download: "https://url73.ctfile.com/d/7244173-154622510-2128a5?p=9765"
+lanzou_pwd: "9765"
 gitee_download: ""
 github_download: ""
 ---

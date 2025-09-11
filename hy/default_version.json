@@ -1,7 +1,7 @@
 {
-  "versionName": "3.0.9",
-  "download": "https://gitee.com/jayjd/hyy/releases/download/3.0.9/FUSE-3.0.9-20250911.apk",
-  "versionCode": 30090,
+  "versionName": "3.0.10",
+  "download": "https://gitee.com/jayjd/hyy/releases/download/3.0.10/FUSE-3.0.10-20250912.apk",
+  "versionCode": 30100,
   "admiration": "MoCh3v8XTJiEOQhSYo3WLj05JEJWwnndwwcf8FX747Q/dfH6oAaUT7FeWihCTpDwe4EE6fv8zSu7aiieFIbuQjE6fLd2Fky+QI/ou2oaM+ctpt/1+h1JXqWmEyetvlg81/9YnrPBIx4MCAwODwIG2v0xEm+Rn4PNmHcJrYuBQ0gwPCVg/QJ4fNsDGxx4L6ivxPTc10jbBJEi+THdaxaP/lc6XsK0GP2+yEWIhtAdJ++VVQA28D373H7RUjnhq2TzaC3Z69aUkRcMeG9W7ZiDMYorin6uNn9Kn6tr7UcccGn01aTHIs7O44n5GyIyaD/I4/j0BpoOpkTVctSaikIO6L3tqLx3pIaQawNTeuussYikVz2s58WON4TiJOmN/ArTUzpQW20onnLL7S+GRUcm6s4IuncfNEZyEIg95Qot0wreelNrbww64tKrlHYx74havPNoztQ8JxPjXduljRycb5zbmS7nAUt5Hz8zf/FiYwj1YZh5xeS6tLm3wOtxfeMeJRMgkLJvoy0h4BtvnqrFlCl1f5T4t74JGUdPktGyueufjAyhTPFJl4gzM/ImmTxe5m6FKM0TfszUS0hAm6tsJcvtL4ZFRybqzgi6dx80RnIQiD3lCi3TCojFZvoltQcc",
   "entity": "c4BdJ+OTVMWUcOw2+oDd7aN6N0NdAVohfZwnPILzzvBIlaATHy+h4kaGzBYWQC+HoyfWhv+IK22e8DYZMKeSD5It+YRzzMxe1WNA1c3HjTRGhswWFkAvhwGbFxRevfDJoFA8lNOfTHZ51IBxd312dPGBAQi/hlU9sWk7Ci7CJWxsUUKXrmmbsfhwsYT75OeZB6/TM3Wy67uI+4TOHh4eur5/pz2PpBAw9WGYecXkurRhAXjjtwUflbyLSS0838mFRro3s2e+Yj0c+Wq1wXzsHsvzMxSANTOHzS5xD+olD0TXTH7SKIT1swlXuC7FJZuY0DoGB4nufMnB4xzroxabYKt2618bj8P/NcoGhpZnRMuFiXcCKjJbDuje7uVAUFYaN/HZxUq2YEwGQw/iek8iCEDNjUycC0bQ+dRvDpwNv7TsFK/H4kCPp42WU/fsbzGf",
   "type": "2Kg0apEWeo2oU+WitzoYOPVhmHnF5Lq0lwnGLWbaBw8jsCDCEAP+qA==",
@@ -11,6 +11,6 @@
   "hyParams": "",
   "appGuard": "ezczxzlZ1CIju/fUyAnNUF3S6kLafcw2vbcAszmQouLTDHsTB6pTajEdPBsXI6P1Uz2NIVjLTppsrXX/PAojFcdBqNvD8+SIN3nDBxlt3Iyd+yhRHJqo/4vP/lwQfzISN+fOYYV280YS2yuUN0UK29tiyUETypkpxn7O0HL6n6BaDocMK3hI4Q==",
   "festival": "https://gitee.com/jayjd/hyt/releases/download/2.1.0/51.png",
-  "info": "3.0.9 正式版 更新内容\n1.修复 打开闪退的问题\n2.适配 更多网页在weblive下全屏的问题\n3.增加 设置网页直播的首选项\n4.直播播放页 右键切换直播间数据源的问题\n如果遇到无法安装的问题,请访问jayjd.github.io 进行下载最新版本",
+  "info": "3.0.10 正式版 更新内容\n1.修复 数据类型导致的闪退（部分用户会出现）\n3.0.9 正式版 更新内容\n1.修复 打开闪退的问题\n2.适配 更多网页在weblive下全屏的问题\n3.增加 设置网页直播的首选项\n4.直播播放页 右键切换直播间数据源的问题\n如果遇到无法安装的问题,请访问jayjd.github.io 进行下载最新版本",
   "isVersion": true
 }

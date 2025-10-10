@@ -47,10 +47,9 @@ layout: default
   <a href="https://pan.xunlei.com/s/VOamYLva7FobphNhKkicEXkiA1?pwd=y9yw" class="download-button" style="margin: 10px;">
     迅雷网盘
   </a>
-</div></div>
-
-```
-为保持项目的继续开发，使用网盘，还望大家海涵！谢谢！ 欢迎捐赠作者。作者会更积极的维护此项目！
+</div>
+<p>为保持项目的继续开发，使用网盘，还望大家海涵！谢谢！ 欢迎捐赠作者。作者会更积极的维护此项目！</p>
+</div>
 
 ### 支持平台
 

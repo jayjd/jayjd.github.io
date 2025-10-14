@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -12,6 +13,7 @@
         --text-mid: #A0A4B8; 
         --primary-accent: #6C63FF; 
         --secondary-accent: #FF6B6B; 
+        --warning-color: #FFC107; /* 警告色 for 提醒 */
     }
 
     body {
@@ -93,12 +95,30 @@
         color: var(--text-light);
     }
     .software-card p.description {
-        font-size: 1.0rem; /* 修正了 font-size */
+        font-size: 1.0rem; 
         color: var(--text-mid);
         line-height: 1.8;
         text-align: center;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2.5rem; /* 为新提醒框腾出空间 */
     }
+    
+    /* 新增的收藏提醒样式 */
+    .alert-box {
+        width: 100%;
+        background-color: rgba(255, 193, 7, 0.1); /* 浅黄色背景 */
+        border: 1px solid var(--warning-color);
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        margin-bottom: 2rem; /* 确保与功能列表有间距 */
+        text-align: center;
+        font-size: 1rem;
+        color: var(--warning-color); /* 警告色文本 */
+        font-weight: 600;
+    }
+    .alert-box strong {
+        color: #fff; /* 强调重要信息 */
+    }
+
 
     /* 特点列表样式 */
     .features {
@@ -196,6 +216,7 @@
         .software-card { padding: 2rem 1.5rem; }
         .software-card img { width: 100px; height: 100px; }
         .download-btn { padding: 0.9rem 1.8rem; font-size: 1rem; }
+        .alert-box { font-size: 0.9rem; }
     }
 </style>
 </head>
@@ -212,6 +233,10 @@
         <img src="https://jayjd.github.io/assets/img/ic_channel.png" alt="FUSE Logo">
         <h2>聚合直播(FUSE) v3.0</h2>
         <p class="description">FUSE 是一个聚合直播 TV 客户端，仅供学习与交流使用。软件不包含破解行为，内容均来源于网页端，本人不对内容负责，不收集个人信息。</p>
+        
+        <div class="alert-box">
+            ⭐ **重要提醒**：为了第一时间可以体验到最新的功能，请务必**收藏本页面**，以免失联！
+        </div>
 
         <div class="features">
             <h3>核心功能一览</h3>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>聚合直播(FUSE) 下载页</title>
+<style>
+    /* 颜色变量 (统一的深蓝灰色系) */
+    :root {
+        --dark-bg: #141624; 
+        --card-bg: #1C1F33; 
+        --text-light: #F0F4F8; 
+        --text-mid: #A0A4B8; 
+        --primary-accent: #6C63FF; 
+        --secondary-accent: #FF6B6B; 
+    }
+
+    body {
+        font-family: "Microsoft YaHei", Arial, sans-serif;
+        background-color: var(--dark-bg);
+        color: var(--text-light);
+        margin: 0;
+        padding: 0;
+        /* 使用 Flexbox 实现 Sticky Footer 布局 */
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* 确保 body 占满整个视口高度 */
+    }
+    a { text-decoration: none; }
+
+    /* Main 内容容器，占据所有可用空间并水平居中其内容 */
+    main {
+        max-width: 550px; 
+        width: 100%;
+        padding: 4rem 1rem; 
+        margin: 0 auto; /* 水平居中 main 容器 */
+        flex-grow: 1; /* 占据剩余垂直空间 */
+        display: flex;
+        justify-content: center; /* 确保卡片在 main 内居中 */
+        align-items: center; /* 可选：如果内容较少，让卡片垂直居中 */
+    }
+
+    /* 软件卡片：保持精致的暗黑风格 */
+    .software-card {
+        background-color: var(--card-bg);
+        border-radius: 24px;
+        padding: 3.5rem 2.5rem; 
+        box-shadow: 
+            0 15px 40px rgba(0,0,0,0.8), 
+            0 0 0 1px rgba(255, 255, 255, 0.05) inset; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 顶部信息 */
+    .card-header-content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .card-header-content h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin: 0;
+        /* 使用渐变文字来突出标题 */
+        background: linear-gradient(90deg, #4A00E0, #8E2DE2); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent; 
+    }
+    .card-header-content p {
+        font-size: 1rem;
+        margin: 0.5rem 0 0 0;
+        color: var(--text-mid);
+        opacity: 0.8;
+    }
+
+    /* Logo 样式 */
+    .software-card img {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 1rem; 
+        border-radius: 20%; 
+        box-shadow: 0 0 0 4px var(--card-bg), 
+                    0 0 15px rgba(108, 99, 255, 0.7); 
+        background-color: #2D2D44; 
+        transition: transform 0.3s;
+    }
+    
+    .software-card h2 {
+        font-size: 2.2rem;
+        margin: 0.8rem 0 1.5rem 0; 
+        color: var(--text-light);
+    }
+    .software-card p.description {
+        font-size: 1rem;
+        color: var(--text-mid);
+        line-height: 1.8;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    /* 特点列表样式 (不变) */
+    .features {
+        padding: 0; 
+        margin: 0 0 2.5rem 0;
+        width: 100%;
+    }
+    .features h3 {
+        color: var(--primary-accent); 
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .features ul {
+        list-style: none;
+        padding: 0 1rem; 
+        margin: 0;
+        display: grid; 
+        gap: 1rem;
+    }
+    .features li {
+        color: var(--text-mid);
+        position: relative;
+        font-size: 0.95rem;
+        padding-left: 1.8rem;
+    }
+    .features li::before {
+        content: "✔"; 
+        color: var(--secondary-accent);
+        font-weight: bold;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    /* 下载按钮样式 (不变) */
+    .download-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .download-btn {
+        background: var(--secondary-accent); 
+        color: #fff;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 1.05rem;
+        letter-spacing: 0.5px;
+        transition: 0.3s;
+        box-shadow: 0 5px 20px rgba(255, 107, 107, 0.4);
+    }
+    .download-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(255, 107, 107, 0.6);
+        background: #FF8F8F; 
+    }
+
+    .links {
+        margin-top: 3rem;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.08); 
+        padding-top: 1.5rem;
+    }
+    .links p {
+        color: var(--text-mid);
+        margin-bottom: 0.8rem;
+        font-size: 0.9rem;
+    }
+    .links a {
+        margin: 0 1rem;
+        color: var(--primary-accent);
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+    .links a:hover {
+        color: #fff;
+    }
+
+    /* 页脚样式：确保它位于底部，且内容居中 */
+    footer {
+        text-align: center;
+        padding: 1.5rem 1rem;
+        color: #555;
+        font-size: 0.8rem;
+        /* 页脚独立于 main，保证在底部 */
+    }
+
+    @media screen and (max-width: 600px) {
+        .card-header-content h1 { font-size: 2.2rem; }
+        .software-card { padding: 2rem 1.5rem; }
+        .software-card img { width: 100px; height: 100px; }
+        .download-btn { padding: 0.9rem 1.8rem; font-size: 1rem; }
+    }
+</style>
+</head>
+<body>
+
+<main>
+    <div class="software-card">
+        
+        <div class="card-header-content">
+            <h1>聚合直播(FUSE)</h1>
+            <p>多平台游戏直播聚合神器 | 仅供学习与交流使用</p>
+        </div>
+
+        <img src="https://jayjd.github.io/assets/img/ic_channel.png" alt="FUSE Logo">
+        <h2>聚合直播(FUSE) v3.0</h2>
+        <p class="description">FUSE 是一个聚合直播 TV 客户端，仅供学习与交流使用。软件不包含破解行为，内容均来源于网页端，本人不对内容负责，不收集个人信息。</p>
+
+        <div class="features">
+            <h3>核心功能一览</h3>
+            <ul>
+                <li>支持多平台直播：HuYa / BiliBili / DouYin / DouYu / CC / KuaiShou / YY / Twitch（测试）</li>
+                <li>支持 Web 网页直播链接直接播放</li>
+                <li>支持 m3u / txt / 影视仓直播源导入</li>
+                <li>高效、稳定、无需额外插件</li>
+                <li>仅供学习与交流使用，请于下载后的 24 小时内卸载</li>
+            </ul>
+        </div>
+
+        <div class="download-links">
+            <a href="https://www.ctpan.com/download/fuse.zip" class="download-btn" target="_blank">诚通网盘下载</a>
+            <a href="https://pan.baidu.com/s/xxxx" class="download-btn" target="_blank">百度网盘下载</a>
+            <a href="https://dl.xunlei.com/fuse.zip" class="download-btn" target="_blank">迅雷网盘下载</a>
+        </div>
+
+        <div class="links">
+            <p>了解更多：</p>
+            <a href="https://jayjd.github.io/" target="_blank">官方网站</a> |
+            <a href="https://github.com/jayjd/HuYaTv" target="_blank">GitHub 发布地址</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 聚合直播. All rights reserved.
+</footer>
+
+</body>
+</html>

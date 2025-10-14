@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
@@ -94,14 +93,14 @@
         color: var(--text-light);
     }
     .software-card p.description {
-        font-size: 1rem;
+        font-size: 1.0rem; /* 修正了 font-size */
         color: var(--text-mid);
         line-height: 1.8;
         text-align: center;
         margin-bottom: 2.5rem;
     }
 
-    /* 特点列表样式 (不变) */
+    /* 特点列表样式 */
     .features {
         padding: 0; 
         margin: 0 0 2.5rem 0;
@@ -137,7 +136,7 @@
         top: 0;
     }
 
-    /* 下载按钮样式 (不变) */
+    /* 下载按钮样式 */
     .download-links {
         display: flex;
         justify-content: center;
@@ -162,6 +161,7 @@
         background: #FF8F8F; 
     }
 
+    /* 链接样式 */
     .links {
         margin-top: 3rem;
         text-align: center;
@@ -183,13 +183,12 @@
         color: #fff;
     }
 
-    /* 页脚样式：确保它位于底部，且内容居中 */
+    /* 页脚样式 */
     footer {
         text-align: center;
         padding: 1.5rem 1rem;
         color: #555;
         font-size: 0.8rem;
-        /* 页脚独立于 main，保证在底部 */
     }
 
     @media screen and (max-width: 600px) {
@@ -226,14 +225,15 @@
         </div>
 
         <div class="download-links">
-            <a href="https://www.ctpan.com/download/fuse.zip" class="download-btn" target="_blank">诚通网盘下载</a>
-            <a href="https://pan.baidu.com/s/xxxx" class="download-btn" target="_blank">百度网盘下载</a>
-            <a href="https://dl.xunlei.com/fuse.zip" class="download-btn" target="_blank">迅雷网盘下载</a>
+            <a href="https://url73.ctfile.com/d/7244173-154622274-eaf553?p=9765" class="download-btn" target="_blank">诚通网盘</a>
+            <a href="https://pan.baidu.com/s/1l9xR6bUR1OkNmsqT4G_xPA?dp-logid=36032000694008480002&pwd=qsxp" class="download-btn" target="_blank">百度网盘</a>
+            <a href="https://pan.xunlei.com/s/VOamYLva7FobphNhKkicEXkiA1?pwd=y9yw" class="download-btn" target="_blank">迅雷网盘</a>
         </div>
 
         <div class="links">
             <p>了解更多：</p>
             <a href="https://jayjd.github.io/" target="_blank">官方网站</a> |
+            <a href="https://pd.qq.com/s/ajih400ke" class="qq-link" target="_blank">QQ 频道交流</a> |
             <a href="https://github.com/jayjd/HuYaTv" target="_blank">GitHub 发布地址</a>
         </div>
     </div>

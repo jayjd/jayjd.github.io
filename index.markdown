@@ -44,6 +44,8 @@ layout: default
   <a href="https://drive.uc.cn/s/5494e6592b3a4" class="download-button" style="margin: 10px;">
     UC
   </a>
+</div>
+<div class="info-row-home">
   <a href="https://pan.xunlei.com/s/VOamYLva7FobphNhKkicEXkiA1?pwd=y9yw" class="download-button" style="margin: 10px;">
     迅雷
   </a>

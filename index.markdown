@@ -38,14 +38,20 @@ layout: default
   <a href="https://pd.qq.com/s/ajih400ke" class="download-button"  style="margin: 0px 5px 0px 5px;">
     QQ頻道
   </a>
-  <a href="https://url73.ctfile.com/d/7244173-154622274-eaf553?p=9765" class="download-button" style="margin: 10px;">
-    诚通网盘
+  <a href="https://pan.quark.cn/s/6d516735d999?pwd=X2UY" class="download-button" style="margin: 10px;">
+    夸克
   </a>
-  <a href="https://pan.baidu.com/s/1l9xR6bUR1OkNmsqT4G_xPA?dp-logid=36032000694008480002&pwd=qsxp" class="download-button" style="margin: 10px;">
-    百度网盘
+  <a href="https://drive.uc.cn/s/5494e6592b3a4" class="download-button" style="margin: 10px;">
+    UC
   </a>
   <a href="https://pan.xunlei.com/s/VOamYLva7FobphNhKkicEXkiA1?pwd=y9yw" class="download-button" style="margin: 10px;">
-    迅雷网盘
+    迅雷
+  </a>
+  <a href="https://pan.baidu.com/s/1l9xR6bUR1OkNmsqT4G_xPA?dp-logid=36032000694008480002&pwd=qsxp" class="download-button" style="margin: 10px;">
+    百度
+  </a>
+  <a href="https://url73.ctfile.com/d/7244173-154622274-eaf553?p=9765" class="download-button" style="margin: 10px;">
+    诚通
   </a>
 </div>
 <p>为保持项目的继续开发，使用网盘，还望大家海涵！谢谢！ 欢迎捐赠作者。作者会更积极的维护此项目！</p>

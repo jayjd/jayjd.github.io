@@ -12,5 +12,6 @@
   "appGuard": "ezczxzlZ1CIju/fUyAnNUF3S6kLafcw2vbcAszmQouLTDHsTB6pTajEdPBsXI6P1Uz2NIVjLTppsrXX/PAojFcdBqNvD8+SIN3nDBxlt3Iyd+yhRHJqo/4vP/lwQfzISN+fOYYV280YS2yuUN0UK29tiyUETypkpxn7O0HL6n6BaDocMK3hI4Q==",
   "festival": "https://gitee.com/jayjd/hyt/releases/download/2.1.0/51.png",
   "info": "3.0.17 正式版 更新内容\n1.去除强制自动更新，有新版本首页顶部Tab栏会有提示\n2.修复 斗鱼无法播放的问题\n3.调整 首页设置弹窗 弹幕设置为软件设置 保留（首选项/设备类型/DLNA/第三方播放器）\n4.修复 首页焦点问题\n5.重构 播放页的操作逻辑、弹幕设置和软件设置的整合\n - 菜单键 右侧设置 把弹幕和界面的设置整合到一起\n - 下键 显示直播信息和更多直播内容\n - 上键 显示收藏夹内容 虎牙显示猜你喜欢\n - 左右 刷直播模式（默认关闭，关闭状态下 左键显示下键的内容  右键显示弹幕设置列表）\n6.增加 渲染模式和缓冲模式\n3.0.16 正式版 更新内容\n1.修复 近一周的异常崩溃问题\n2.优化 今后的在线升级策略\n3.0.15 正式版 更新内容\n1.针对不同的设备 修复众多的BUG\n3.0.14 正式版 更新内容\n1.优化 收藏夹和历史记录的列表显示\n2.增加 播放页刷视频开关闭，默认关闭（即上下切换直播间）\n3.优化 播放页控制界面的显示\n4.重构 整体界面的焦点选中样式\n5.重构 tvlive weblive频道列表的显示\n6.修复 众多已知的BUG\n如果遇到无法安装的问题,请访问jayjd.github.io 进行下载最新版本",
-  "isVersion": true
+  "isVersion": true,
+  "updateType": 3
 }

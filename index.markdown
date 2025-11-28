@@ -44,7 +44,7 @@ layout: default
 </div>
 <div class="info-row-home">
   <a href="https://pan.quark.cn/s/6d516735d999?pwd=X2UY" style="margin: 10px;">
-    <img src="https://img.shields.io/badge/build-%E7%99%BE%E5%BA%A6-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=57d0ff" alt="kuake" loading="lazy">
+    <img src="https://img.shields.io/badge/build-%E5%A4%B8%E5%85%8B-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=73f8a1" alt="kuake" loading="lazy">
   </a>
   <a href="https://pan.xunlei.com/s/VOamYLva7FobphNhKkicEXkiA1?pwd=y9yw" style="margin: 10px;">
     <img src="https://img.shields.io/badge/build-%E8%BF%85%E9%9B%B7-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=3f85ff" alt="xunlei" loading="lazy">

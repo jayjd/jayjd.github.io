@@ -9,16 +9,16 @@ layout: default
 
   <div class="home_buttons">
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://img.shields.io/badge/%205.0+-orange.svg?color=orange&logoColor=orange&label=支持版本&logo=Android" alt="支持安卓版本" loading="lazy">
+      <img src="https://img.shields.io/badge/build-5.0+-badge?style=for-the-badge&color=orange&logoColor=orange&label=%E6%94%AF%E6%8C%81%E7%89%88%E6%9C%AC&logo=Android" alt="支持安卓版本" loading="lazy">
     </a>
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=发行版本&logo=DocuSign" alt="Releases" loading="lazy">
+      <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC&style=for-the-badge" alt="Releases" loading="lazy">
     </a>
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=下载次数&logoColor=yellow&color=yellow" alt="Download" loading="lazy">
+      <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=%E4%B8%8B%E8%BD%BD%E6%AC%A1%E6%95%B0&logoColor=yellow&color=yellow&style=for-the-badge" alt="Download" loading="lazy">
     </a>
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://img.shields.io/github/stars/jayjd/huyatv?style=social" alt="GitHub stars" loading="lazy">
+      <img src="https://img.shields.io/github/stars/jayjd/huyatv?style=for-the-badge" alt="GitHub stars" loading="lazy">
     </a>
   </div>
 </div>
@@ -31,29 +31,30 @@ layout: default
   <p>如果本项目存在侵犯您的合法权益的情况，请及时与开发者联系，开发者将会及时删除有关内容。</p>
 </div>
 
-### QQ频道&下载地址
+### 社区交流&下载地址
 
 <div class="disclaimer">
 <div class="info-row-home">
   <a href="https://pd.qq.com/s/ajih400ke" class="download-button"  style="margin: 0px 5px 0px 5px;">
-    QQ頻道
+    <img src="https://img.shields.io/badge/build-%E6%8A%A2%E9%B2%9C%E4%BD%93%E9%AA%8C-badge?style=for-the-badge&logo=qq&label=%E8%85%BE%E8%AE%AF%E9%A2%91%E9%81%93&logoColor=white&color=blue" alt="QQ" loading="lazy">
   </a>
+  <a href="https://discord.gg/fxR6cnkt7" class="download-button"  style="margin: 0px 5px 0px 5px;">
+    <img src="https://img.shields.io/badge/build-%E7%AB%8B%E5%8D%B3%E5%8A%A0%E5%85%A5-badge?style=for-the-badge&logo=DISCORD&label=DISCORD&logoColor=white&color=purple" alt="QQ" loading="lazy">
+  </a>
+
   <a href="https://pan.quark.cn/s/6d516735d999?pwd=X2UY" class="download-button" style="margin: 10px;">
-    夸克
-  </a>
-  <a href="https://drive.uc.cn/s/5494e6592b3a4" class="download-button" style="margin: 10px;">
-    UC
+    <img src="https://img.shields.io/badge/build-%E7%99%BE%E5%BA%A6-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=57d0ff" alt="kuake" loading="lazy">
   </a>
 </div>
 <div class="info-row-home">
   <a href="https://pan.xunlei.com/s/VOamYLva7FobphNhKkicEXkiA1?pwd=y9yw" class="download-button" style="margin: 10px;">
-    迅雷
+    <img src="https://img.shields.io/badge/build-%E8%BF%85%E9%9B%B7-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=3f85ff" alt="xunlei" loading="lazy">
   </a>
   <a href="https://pan.baidu.com/s/1l9xR6bUR1OkNmsqT4G_xPA?dp-logid=36032000694008480002&pwd=qsxp" class="download-button" style="margin: 10px;">
-    百度
+    <img src="https://img.shields.io/badge/build-%E7%99%BE%E5%BA%A6-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=57d0ff" alt="baidu" loading="lazy">
   </a>
-  <a href="https://url73.ctfile.com/d/7244173-154622274-eaf553?p=9765" class="download-button" style="margin: 10px;">
-    诚通
+  <a href="https://drive.uc.cn/s/5494e6592b3a4" class="download-button" style="margin: 10px;">
+    <img src="https://img.shields.io/badge/build-UC-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=ff8400" alt="uc" loading="lazy">
   </a>
 </div>
 <div class="info-row-home">

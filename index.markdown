@@ -35,25 +35,24 @@ layout: default
 
 <div class="disclaimer">
 <div class="info-row-home">
-  <a href="https://pd.qq.com/s/ajih400ke" class="download-button"  style="margin: 0px 5px 0px 5px;">
+  <a href="https://pd.qq.com/s/ajih400ke" style="margin: 0px 5px 0px 5px;">
     <img src="https://img.shields.io/badge/build-%E6%8A%A2%E9%B2%9C%E4%BD%93%E9%AA%8C-badge?style=for-the-badge&logo=qq&label=%E8%85%BE%E8%AE%AF%E9%A2%91%E9%81%93&logoColor=white&color=blue" alt="QQ" loading="lazy">
   </a>
-  <a href="https://discord.gg/fxR6cnkt7" class="download-button"  style="margin: 0px 5px 0px 5px;">
-    <img src="https://img.shields.io/badge/build-%E7%AB%8B%E5%8D%B3%E5%8A%A0%E5%85%A5-badge?style=for-the-badge&logo=DISCORD&label=DISCORD&logoColor=white&color=purple" alt="QQ" loading="lazy">
-  </a>
-
-  <a href="https://pan.quark.cn/s/6d516735d999?pwd=X2UY" class="download-button" style="margin: 10px;">
-    <img src="https://img.shields.io/badge/build-%E7%99%BE%E5%BA%A6-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=57d0ff" alt="kuake" loading="lazy">
+  <a href="https://discord.gg/fxR6cnkt7" style="margin: 0px 5px 0px 5px;">
+    <img src="https://img.shields.io/badge/build-%E7%AB%8B%E5%8D%B3%E5%8A%A0%E5%85%A5-badge?style=for-the-badge&logo=DISCORD&label=DISCORD&logoColor=white&color=purple" alt="DISCORD" loading="lazy">
   </a>
 </div>
 <div class="info-row-home">
-  <a href="https://pan.xunlei.com/s/VOamYLva7FobphNhKkicEXkiA1?pwd=y9yw" class="download-button" style="margin: 10px;">
+  <a href="https://pan.quark.cn/s/6d516735d999?pwd=X2UY" style="margin: 10px;">
+    <img src="https://img.shields.io/badge/build-%E7%99%BE%E5%BA%A6-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=57d0ff" alt="kuake" loading="lazy">
+  </a>
+  <a href="https://pan.xunlei.com/s/VOamYLva7FobphNhKkicEXkiA1?pwd=y9yw" style="margin: 10px;">
     <img src="https://img.shields.io/badge/build-%E8%BF%85%E9%9B%B7-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=3f85ff" alt="xunlei" loading="lazy">
   </a>
   <a href="https://pan.baidu.com/s/1l9xR6bUR1OkNmsqT4G_xPA?dp-logid=36032000694008480002&pwd=qsxp" class="download-button" style="margin: 10px;">
     <img src="https://img.shields.io/badge/build-%E7%99%BE%E5%BA%A6-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=57d0ff" alt="baidu" loading="lazy">
   </a>
-  <a href="https://drive.uc.cn/s/5494e6592b3a4" class="download-button" style="margin: 10px;">
+  <a href="https://drive.uc.cn/s/5494e6592b3a4" style="margin: 10px;">
     <img src="https://img.shields.io/badge/build-UC-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=ff8400" alt="uc" loading="lazy">
   </a>
 </div>

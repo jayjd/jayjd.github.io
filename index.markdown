@@ -49,7 +49,7 @@ layout: default
   <a href="https://pan.xunlei.com/s/VOamYLva7FobphNhKkicEXkiA1?pwd=y9yw" style="margin: 10px;">
     <img src="https://img.shields.io/badge/build-%E8%BF%85%E9%9B%B7-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=3f85ff" alt="xunlei" loading="lazy">
   </a>
-  <a href="https://pan.baidu.com/s/1l9xR6bUR1OkNmsqT4G_xPA?dp-logid=36032000694008480002&pwd=qsxp" class="download-button" style="margin: 10px;">
+  <a href="https://pan.baidu.com/s/1l9xR6bUR1OkNmsqT4G_xPA?dp-logid=36032000694008480002&pwd=qsxp"  style="margin: 10px;">
     <img src="https://img.shields.io/badge/build-%E7%99%BE%E5%BA%A6-badge?style=for-the-badge&label=%E4%B8%8B%E8%BD%BD&color=57d0ff" alt="baidu" loading="lazy">
   </a>
   <a href="https://drive.uc.cn/s/5494e6592b3a4" style="margin: 10px;">

@@ -16,8 +16,8 @@ update-content: |
 date:   2025-04-01 08:00:49 +0800
 last_modified_at: 2025-04-01 08:00:49 +0800
 categories: car
-lanzou_download: "https://jayjd.lanzouu.com/b0017d5y8f"
-lanzou_pwd: "70ez"
+lanzou_download: ""
+lanzou_pwd: ""
 gitee_download: ""
 github_download: ""
 ---

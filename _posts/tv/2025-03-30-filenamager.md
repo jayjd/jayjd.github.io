@@ -13,8 +13,8 @@ update-content: |
 date:   2025-03-30 08:02:49 +0800
 last_modified_at: 2025-03-30 08:02:49 +0800
 categories: tv
-lanzou_download: "https://jayjd.lanzouu.com/b0017d633a"
-lanzou_pwd: "3wa3"
+lanzou_download: ""
+lanzou_pwd: ""
 gitee_download: ""
 github_download: ""
 ---

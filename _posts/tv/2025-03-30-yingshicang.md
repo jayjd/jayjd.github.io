@@ -39,8 +39,8 @@ update-content: |
 date:   2025-03-30 08:00:49 +0800
 last_modified_at: 2025-05-26 11:00:00 +0800
 categories: tv
-lanzou_download: "https://jayjd.lanzouu.com/b0017daena"
-lanzou_pwd: "go02"
+lanzou_download: ""
+lanzou_pwd: ""
 gitee_download: ""
 github_download: ""
 ---

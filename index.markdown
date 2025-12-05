@@ -15,7 +15,7 @@ layout: default
       <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC&style=for-the-badge" alt="Releases" loading="lazy">
     </a>
     <a href="https://github.com/jayjd/HuYaTv/releases/tag/2.1.25.4" style="margin: 0 10px;">
-      <img src="https://img.shields.io/github/v/release/jayjd/huyatv?include_prereleases&display_name=tag&style=for-the-badge&label=4.4%E4%B8%93%E7%94%A8%E7%89%88" alt="PreReleases" loading="lazy">
+      <img src="https://img.shields.io/badge/build-v2.1.25.4-badge?&style=for-the-badge&label=4.4%E4%B8%93%E7%94%A8%E7%89%88" alt="PreReleases" loading="lazy">
     </a>
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
       <img src="https://shields.io/github/downloads/jayjd/huyatv/total?logo=Bookmeter&label=%E4%B8%8B%E8%BD%BD%E6%AC%A1%E6%95%B0&logoColor=yellow&color=yellow&style=for-the-badge" alt="Download" loading="lazy">

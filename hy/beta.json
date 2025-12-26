@@ -1,0 +1,13 @@
+{
+  "beta_enabled": true,
+
+  "expire_at": "2026-01-04 00:00:00",
+
+  "allowed_devices": [
+	  "744D67E892A761452C94A45C57EFE07A74067A6ADAC3DE09A4AFF56A1AAB2460",
+    "5E31994E69308A8D43B19F1FD535383EE4E1E3E02A8732E84413593AAF338186"
+  ],
+
+  "revoked_devices": [
+  ]
+}

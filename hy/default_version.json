@@ -11,7 +11,7 @@
   "hyParams": "",
   "appGuard": "ezczxzlZ1CIju/fUyAnNUF3S6kLafcw2vbcAszmQouLTDHsTB6pTajEdPBsXI6P1Uz2NIVjLTppsrXX/PAojFcdBqNvD8+SIN3nDBxlt3Iyd+yhRHJqo/4vP/lwQfzISN+fOYYV280YS2yuUN0UK29tiyUETypkpxn7O0HL6n6BaDocMK3hI4Q==",
   "festival": "https://gitee.com/jayjd/hyt/releases/download/2.1.0/51.png",
-  "info": "3.0.22 正式版 更新内容\n刷抖音功能\n1.重构 遥控器操作逻辑\n2.菜单键 呼出功能栏 对以下功能进行操作\n全屏/评论/作者主页/相关视频/连播/弹幕/清屏/不感兴趣/登录/点赞/关注/收藏\n3.上下 正常切换视频\n4.左右分别是 全屏/评论区的开启和关闭\n5.OK 视频的播放和暂停操作\n6.针对评论区增加了自动滚动显示\n其他功能\n1.增加 weblive的网页播放（均来自各官方网站的播放内容）\n2.软件闪退进行优化\n3.0.21 正式版 更新内容\n1.修复 webview在特殊情况下的版本检测\n2.修复 weblive列表无法选择频道的问题\n.增加 斗鱼一起看的直播板块\n4.移除 weblive的直播延迟检测\n5.修复 其他已知问题\n如果遇到无法安装的问题,请访问jayjd.github.io 进行下载最新版本",
+  "info": "3.0.22 正式版 更新内容\n刷抖音功能（已解除版本限制）\n1.重构 遥控器操作逻辑\n2.菜单键 呼出功能栏 对以下功能进行操作\n全屏/评论/作者主页/相关视频/连播/弹幕/清屏/不感兴趣/登录/点赞/关注/收藏\n3.上下 正常切换视频\n4.左右分别是 全屏/评论区的开启和关闭\n5.OK 视频的播放和暂停操作\n6.针对评论区增加了自动滚动显示\n其他功能\n1.增加 weblive的网页播放（均来自各官方网站的播放内容）\n2.软件闪退进行优化\n3.0.21 正式版 更新内容\n1.修复 webview在特殊情况下的版本检测\n2.修复 weblive列表无法选择频道的问题\n.增加 斗鱼一起看的直播板块\n4.移除 weblive的直播延迟检测\n5.修复 其他已知问题\n如果遇到无法安装的问题,请访问jayjd.github.io 进行下载最新版本",
   "isVersion": true,
   "updateType": 3
 }

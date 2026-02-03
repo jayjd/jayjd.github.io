@@ -9,10 +9,10 @@ layout: default
 
   <div class="home_buttons">
     <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://img.shields.io/badge/build-5.0+-badge?style=for-the-badge&color=orange&logoColor=orange&label=%E6%94%AF%E6%8C%81%E7%89%88%E6%9C%AC&logo=Android" alt="支持安卓版本" loading="lazy">
+      <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=6.0%E4%BB%A5%E4%B8%8A%E8%AE%BE%E5%A4%87&style=for-the-badge" alt="Releases-latest" loading="lazy">
     </a>
-    <a href="https://github.com/jayjd/huyatv/releases/latest" style="margin: 0 10px;">
-      <img src="https://img.shields.io/github/v/release/jayjd/huyatv?color=blue&logoColor=blue&label=%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC&style=for-the-badge" alt="Releases" loading="lazy">
+    <a href="https://github.com/jayjd/HuYaTv/releases/tag/3.0.23" style="margin: 0 10px;">
+      <img src="https://img.shields.io/badge/build-v3.0.23-badge?&style=for-the-badge&label=5.0%E4%B8%93%E7%94%A8%E7%89%88" alt="Releases-3.0.23" loading="lazy">
     </a>
     <a href="https://github.com/jayjd/HuYaTv/releases/tag/2.1.25.4" style="margin: 0 10px;">
       <img src="https://img.shields.io/badge/build-v2.1.25.4-badge?&style=for-the-badge&label=4.4%E4%B8%93%E7%94%A8%E7%89%88" alt="PreReleases" loading="lazy">
